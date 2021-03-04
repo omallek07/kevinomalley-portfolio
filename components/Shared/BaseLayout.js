@@ -12,7 +12,8 @@ const StyledLayout = styled.div`
 const StyledMain = styled.main`
   position: relative;
   overflow: hidden;
-  height: 95vh;
+  height: 100vh;
+  padding: 8vh 1rem 1rem 1rem;
   background-image: linear-gradient(45deg,#00aeef 0%,#096fb9 100%);
 `;
 

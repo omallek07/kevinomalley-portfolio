@@ -1,39 +1,33 @@
-import React, { Component } from "react";
+import React from "react";
 import axios from 'axios';
-import BaseLayout from '../../components/Shared/BaseLayout';
+import BaseLayout from '@/components/Shared/BaseLayout';
 
 import { withRouter } from 'next/router';
 
-class Blog extends Component {
-  static async getInitialProps({ query }) {
-    let post = {};
-    try {
-      const apiLink = `https://jsonplaceholder.typicode.com/posts/${query.id}`;
-      const { data } = await axios.get(apiLink);
-      post = data;
-    } catch(e) {
-      console.log(e);
-    }
+import { useGetData } from '@/actions';
 
-    return { post };
-  }
+const Blog = ({query}) => {
+  const {data: post, error, loading} = useGetData(`https://jsonplaceholder.typicode.com/posts/${query.id}`);
 
-  render() {
-    const { post } = this.props;
+  let renderBlog;
 
-    if (!post) {
-      return <span>Loading...</span>;
-    }
-
-    return (
-      <BaseLayout>
+  if (loading) {
+    renderBlog = <div>Loading...</div>
+  } else if (error) {
+    renderBlog = <div>{error.message}</div>
+  } else {
+    renderBlog = (
         <div>
           <div>{post.title}</div>
           <div>{post.body}</div>
         </div>
-      </BaseLayout>
     )
   }
-}
 
+  return (
+    <BaseLayout>
+      {renderBlog}
+    </BaseLayout>
+  )
+}
 export default withRouter(Blog);

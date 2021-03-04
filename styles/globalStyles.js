@@ -3,9 +3,12 @@ import { createGlobalStyle } from 'styled-components';
 import styled from 'styled-components';
 
 export const theme = {
-  primaryBlue: "#0794B4",
-  secondaryBlue: "#043157",
-  primaryWhite: "#fff"
+  primaryOrange: '#fd9d61',
+  secondaryOrange: '#feca53',
+  primaryBlue: "#00aeef",
+  secondaryBlue: "#096fb9",
+  primaryBlack: '##2c3e50',
+  primaryGray: '##ecedee',
 };
 
 export const Row = styled.div`
@@ -29,6 +32,11 @@ const GlobalStyle = createGlobalStyle`
   a {
     color: inherit;
     text-decoration: none;
+    transition: all 300ms ease;
+    &:hover,
+    &:active {
+      color: ${props => props.theme.primaryOrange};
+    }
   }
 
   * {

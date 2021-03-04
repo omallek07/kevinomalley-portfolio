@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import BaseLayout from '../components/Shared/BaseLayout';
 import styled from 'styled-components';
 import Link from 'next/link';
@@ -23,6 +23,7 @@ const StyledContainer = styled.div`
   justify-content: center;
   z-index: 1;
   width: 50%;
+  min-width: 450px;
   color: white;
   h2 {
     font-weight: bold;
@@ -48,68 +49,67 @@ const StyledHero = styled.div`
 `;
 
 const StyledWelcome = styled.div`
-  max-width: 80%;
   font-size: 1.8rem;
   > div {
     margin-bottom: 2rem;
   }
 `;
 
-export default class Index extends Component {
-  render() {
-    return (
-      <BaseLayout className="home">
-        <StyledHome>
-          <StyledBackgroundImage>
-            <img alt="background image" src="/images/background-index.png" />
-          </StyledBackgroundImage>
+const Index = () => {
+  return (
+    <BaseLayout className="home">
+      <StyledHome>
+        <StyledBackgroundImage>
+          <img alt="background image" src="/images/background-index.png" />
+        </StyledBackgroundImage>
 
-          <Row>
+        <Row>
 
-            <StyledContainer>
-              <StyledHero>
-                <img src="/images/section-1.jpg" alt="hero image" />
-                <div className="hero-overlay">
-                  <h2>Full Stack Web Developer</h2>
-                  <div>Have a look at my portfolio and job history</div>
-                </div>
-              </StyledHero>
-            </StyledContainer>
+          <StyledContainer>
+            <StyledHero>
+              <img src="/images/section-1.jpg" alt="hero image" />
+              <div className="hero-overlay">
+                <h2>Full Stack Web Developer</h2>
+                <div>Have a look at my portfolio and job history</div>
+              </div>
+            </StyledHero>
+          </StyledContainer>
 
-            <StyledContainer>
-              <StyledWelcome>
-                <div>
-                  Welcome to my portfolio website for Kevin O'Malley.
-                </div>
-                <div>
-                <span>While you are here, take a look at my </span>
-                <Typed
-                    strings={[
-                      'projects.',
-                      'resume.',
-                      'blog posts.'
-                    ]}
-                    typeSpeed={70}
-                    backSpeed={70}
-                    backDelay={1000}
-                    loopCount={0}
-                    showCursor
-                    className="self-typed"
-                    cursorChar="|"
-                  />
-                </div>
-                <div>
-                  <Link href={'/projects'} passHref>
-                    <a>Let's take a look at my work.</a>
-                  </Link>
-                </div>
-              </StyledWelcome>
-            </StyledContainer>
+          <StyledContainer>
+            <StyledWelcome>
+              <div>
+                Welcome to my portfolio website.
+              </div>
+              <div>
+              <span>While you are here, take a look at my </span>
+              <Typed
+                  strings={[
+                    'projects.',
+                    'blog.',
+                    'resume.',
+                  ]}
+                  typeSpeed={70}
+                  backSpeed={70}
+                  backDelay={1000}
+                  loopCount={5}
+                  showCursor
+                  className="self-typed"
+                  cursorChar="|"
+                />
+              </div>
+              <div>
+                <Link href={'/projects'} passHref>
+                  <a>Let's take a look at my work.</a>
+                </Link>
+              </div>
+            </StyledWelcome>
+          </StyledContainer>
 
-          </Row>
+        </Row>
 
-        </StyledHome>
-      </BaseLayout>
-    )
-  };
-}
+      </StyledHome>
+    </BaseLayout>
+  )
+};
+
+export default Index;
