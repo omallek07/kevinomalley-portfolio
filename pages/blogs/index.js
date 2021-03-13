@@ -1,11 +1,10 @@
 import React from 'react';
 import BaseLayout from '@/components/Shared/BaseLayout';
 import Link from 'next/link';
-import { useGetData } from '@/actions';
+import { useGetPosts } from '@/actions';
 
 const Blogs = () => {
-
-  const { data: posts, error, loading} = useGetData('/api/v1/posts');
+  const { data: posts, error, loading} = useGetPosts();
 
   const renderPosts = (posts) => {
     return posts.map(post => {

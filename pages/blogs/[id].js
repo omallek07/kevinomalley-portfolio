@@ -1,13 +1,13 @@
 import React from "react";
-import axios from 'axios';
 import BaseLayout from '@/components/Shared/BaseLayout';
 
-import { withRouter } from 'next/router';
+import { useRouter } from 'next/router';
 
-import { useGetData } from '@/actions';
+import { useGetPostById } from '@/actions';
 
-const Blog = ({query}) => {
-  const {data: post, error, loading} = useGetData(`https://jsonplaceholder.typicode.com/posts/${query.id}`);
+const Blog = () => {
+  const router = useRouter();
+  const {data: post, error, loading} = useGetPostById(router.query.id);
 
   let renderBlog;
 
@@ -30,4 +30,4 @@ const Blog = ({query}) => {
     </BaseLayout>
   )
 }
-export default withRouter(Blog);
+export default Blog;
