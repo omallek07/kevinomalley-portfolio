@@ -23,7 +23,6 @@ const StyledContainer = styled.div`
   justify-content: center;
   z-index: 1;
   width: 50%;
-  min-width: 450px;
   color: white;
   h2 {
     font-weight: bold;
@@ -49,6 +48,7 @@ const StyledHero = styled.div`
 `;
 
 const StyledWelcome = styled.div`
+  width: 100%;
   font-size: 1.8rem;
   > div {
     margin-bottom: 2rem;
@@ -62,9 +62,7 @@ const Index = () => {
         <StyledBackgroundImage>
           <img alt="background image" src="/images/background-index.png" />
         </StyledBackgroundImage>
-
         <Row>
-
           <StyledContainer>
             <StyledHero>
               <img src="/images/section-1.jpg" alt="hero image" />
@@ -82,6 +80,7 @@ const Index = () => {
               </div>
               <div>
               <span>While you are here, take a look at my </span>
+              <div>
               <Typed
                   strings={[
                     'projects.',
@@ -97,6 +96,7 @@ const Index = () => {
                   cursorChar="|"
                 />
               </div>
+              </div>
               <div>
                 <Link href={'/projects'} passHref>
                   <a>Let's take a look at my work.</a>
@@ -106,7 +106,6 @@ const Index = () => {
           </StyledContainer>
 
         </Row>
-
       </StyledHome>
     </BaseLayout>
   )

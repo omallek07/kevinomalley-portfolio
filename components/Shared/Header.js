@@ -1,17 +1,21 @@
 import React from 'react';
 import Link from 'next/link';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { useUser } from '@auth0/nextjs-auth0';
 
 // TODO: Create Hamburger Menu for responsiveness
 
 const StyledHeader = styled.div`
   display: flex;
   align-items: center;
-  height: 8vh;
-  margin-left: 2rem;
+  height: 10vh;
+  padding-left: 2rem;
   position: absolute;
   top: 0;
   z-index: 5;
+  ${props => props.pageTheme === 'portfolio' && css`
+  background: ${props => props.theme.primaryBlack};
+  `}
 `;
 
 const StyledLink = styled.a`
@@ -21,7 +25,7 @@ const StyledLink = styled.a`
   letter-spacing: 1.1px;
 
   &:first-of-type {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin-right: 2.5rem;
   }
@@ -33,12 +37,8 @@ const pageLinks = [
     path: '/'
   },
   {
-    name: 'Home',
-    path: '/'
-  },
-  {
-    name: 'About',
-    path: '/about'
+    name: 'Portfolio',
+    path: '/portfolios'
   },
   {
     name: 'Projects',
@@ -48,10 +48,10 @@ const pageLinks = [
     name: 'Blogs',
     path: '/blogs'
   },
-  {
-    name: 'Resume',
-    path: '/resume'
-  }
+   {
+    name: 'About',
+    path: '/about'
+  },
 ];
 
 const renderPageLinks = pageLinks.map(page => {
@@ -62,14 +62,23 @@ const renderPageLinks = pageLinks.map(page => {
   )
 })
 
-const Header = () => {
+const renderAuthLinks = userLoggedIn => {
+
+  const href = userLoggedIn ? '/api/auth/logout' : '/api/auth/login';
+  const linkLabel = userLoggedIn ? 'Logout' : 'Login';
   return (
-    <StyledHeader>
+    <Link key={linkLabel} href={href} passHref>
+        <StyledLink>{linkLabel}</StyledLink>
+    </Link>
+  )
+}
+
+const Header = ({ pageTheme }) => {
+  const { user } = useUser();
+  return (
+    <StyledHeader pageTheme={pageTheme}>
       {renderPageLinks}
-      {/* Login Link */}
-      <Link key={'login'} href={'/login'} passHref>
-        <StyledLink>Login</StyledLink>
-      </Link>
+      {renderAuthLinks(user)}
     </StyledHeader>
   );
 };

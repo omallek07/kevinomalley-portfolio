@@ -12,7 +12,7 @@ const fetcher = (url) =>
 });
 
 export const useGetPosts = () => {
-  const { data, error, ...rest } = useSWR(`/api/v1/posts`, fetcher);
+  const { data, error, ...rest } = useSWR(`/api/posts`, fetcher);
   return {
     data,
     error,
@@ -22,7 +22,27 @@ export const useGetPosts = () => {
 }
 
 export const useGetPostById = (id) => {
-  const { data, error, ...rest } = useSWR(id ? `/api/v1/posts/${id}` : null, fetcher);
+  const { data, error, ...rest } = useSWR(id ? `/api/posts/${id}` : null, fetcher);
+  return {
+    data,
+    error,
+    loading: !data && !error,
+    ...rest,
+  }
+}
+
+export const useGetPortfolios = () => {
+  const { data, error, ...rest } = useSWR(`/api/portfolios`, fetcher);
+  return {
+    data,
+    error,
+    loading: !data && !error,
+    ...rest,
+  }
+}
+
+export const useGetPortfolioById = (id) => {
+  const { data, error, ...rest } = useSWR(id ? `/api/portfolios/${id}` : null, fetcher);
   return {
     data,
     error,

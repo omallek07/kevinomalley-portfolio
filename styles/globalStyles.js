@@ -7,13 +7,15 @@ export const theme = {
   secondaryOrange: '#feca53',
   primaryBlue: "#00aeef",
   secondaryBlue: "#096fb9",
-  primaryBlack: '##2c3e50',
-  primaryGray: '##ecedee',
+  primaryBlack: '#2c3e50',
+  primaryGray: '#ecedee',
+  secondaryGray: '#F7F7F7'
 };
 
 export const Row = styled.div`
   display: flex;
   flex-direction: row;
+  width: 100%;
 `;
 
 const GlobalStyle = createGlobalStyle`
