@@ -1,7 +1,7 @@
 import React from 'react';
-import BaseLayout from '@/components/Shared/BaseLayout';
+import BaseLayout from '@/components/shared/BaseLayout';
 import PortfolioApi from '@/lib/api/portfolios';
-import PortfolioCard from './portfolioCard';
+import PortfolioCard from '@/components/portfolios/PortfolioCard';
 
 const Portfolios = ({portfolios}) => {
 

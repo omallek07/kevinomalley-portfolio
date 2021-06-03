@@ -1,6 +1,6 @@
 import React from 'react';
 import withAuth from '@/hoc/withAuth';
-import BaseLayout from '@/components/Shared/BaseLayout';
+import BaseLayout from '@/components/shared/BaseLayout';
 
 const Admin = ({user, loading}) => {
 

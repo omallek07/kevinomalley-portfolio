@@ -1,9 +1,10 @@
 import React from 'react';
-import BaseLayout from '../components/Shared/BaseLayout';
+import BaseLayout from '../components/shared/BaseLayout';
 import styled from 'styled-components';
 import Link from 'next/link';
 import { Row } from '../styles/globalStyles';
 import Typed from 'react-typed';
+import withAuth from '@/hoc/withAuth';
 
 const StyledHome = styled.div`
   display: flex;
@@ -111,4 +112,4 @@ const Index = () => {
   )
 };
 
-export default Index;
+export default withAuth(Index);

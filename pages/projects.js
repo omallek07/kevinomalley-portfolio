@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import BaseLayout from '../components/Shared/BaseLayout';
+import BaseLayout from '../components/shared/BaseLayout';
 
 export default class Projects extends Component {
 

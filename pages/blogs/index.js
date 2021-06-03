@@ -1,5 +1,5 @@
 import React from 'react';
-import BaseLayout from '@/components/Shared/BaseLayout';
+import BaseLayout from '@/components/shared/BaseLayout';
 import Link from 'next/link';
 import { useGetPosts } from '@/actions';
 
