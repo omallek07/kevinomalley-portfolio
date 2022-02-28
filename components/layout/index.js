@@ -3,7 +3,7 @@ import Header from "./header";
 import Footer from "./footer";
 import styles from "./layout.module.css";
 
-export default function Layout({ children, home, pageTitle }) {
+export default function Layout({ children, pageTitle }) {
   const siteTitle = `Kevin O'Malley${pageTitle && " | " + pageTitle}`;
   return (
     <>

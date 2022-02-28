@@ -2,13 +2,13 @@ import React from "react";
 import Image from "next/image";
 import styles from "./profileShot.module.css";
 
-const ProfileShot = ({ width, height, rounded, bordered }) => {
+const ProfileShot = () => {
   return (
     <Image
-      className={`${rounded && styles.rounded} ${bordered && styles.bordered}`}
+      className={styles.profileShot}
       src="/static/KevinProfile2022.jpg"
-      height={height}
-      width={width}
+      height={120}
+      width={80}
       alt="Kevin O'Malley"
     />
   );

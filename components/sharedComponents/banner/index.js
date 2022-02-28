@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./banner.module.css";
 
-const Banner = ({ title, subtitle }) => {
+const Banner = ({ title }) => {
   let titleRender;
 
   // For styling purposes, split title into individual spans if title is more than one word
@@ -16,7 +16,6 @@ const Banner = ({ title, subtitle }) => {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>{titleRender}</h1>
-      <p className={styles.subtitle}>{subtitle}</p>
     </div>
   );
 };

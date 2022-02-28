@@ -70,6 +70,7 @@ button:focus {
   --text-orange: #f8b388;
   --text-green: #a6eb65;
   --text-yellow: #ffeb78;
+  --border-radius: 10px;
 }
 
 /* @font-face {

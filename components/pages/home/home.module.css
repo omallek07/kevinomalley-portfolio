@@ -1,2 +1,22 @@
-.landing {
+.bannerRow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background: url("/static/code-hero.jpeg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.profileShotWrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.profileShotWrapper img {
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--text-white-100) !important;
 }
