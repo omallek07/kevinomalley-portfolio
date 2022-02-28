@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0rem 1rem;
+  height: 10vh;
+  z-index: 1;
+}
+
+.navHeader {
+  opacity: 1;
+  color: white;
+}
+
+.navItem {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.navItem:last-of-type {
+  margin-right: 0;
+}

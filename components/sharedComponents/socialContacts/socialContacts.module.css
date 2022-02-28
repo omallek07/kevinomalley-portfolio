@@ -1,0 +1,11 @@
+.socialContacts {
+  display: flex;
+}
+
+.socialContact {
+  margin-right: 15px;
+}
+
+.socialContact:last-child {
+  margin-right: 0;
+}
