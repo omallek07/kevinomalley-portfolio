@@ -4,19 +4,37 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1.5rem;
+}
+
+.bannerRow:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
   background: url("/static/code-hero.jpeg");
-  background-position: 50%;
   background-repeat: no-repeat;
+  background-position: 50% 0;
   background-size: cover;
 }
 
+.aboutMeContainer {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .profileShotWrapper {
-  position: relative;
-  z-index: 2;
+  margin-right: 1rem;
 }
 
 .profileShotWrapper img {
-  border-radius: 50%;
+  border-radius: var(--border-radius);
   overflow: hidden;
-  border: 3px solid var(--text-white-100) !important;
 }

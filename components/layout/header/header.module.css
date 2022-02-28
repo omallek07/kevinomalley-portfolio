@@ -1,9 +1,9 @@
 .header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+  flex-direction: column;
   width: 100%;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
   z-index: 1;
 }
 
@@ -11,13 +11,27 @@
   opacity: 1;
   color: white;
   font-size: 1.2rem;
+  display: inline;
 }
 
 .navItem {
   font-size: 1rem;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
+  white-space: nowrap;
 }
 
 .navItem:last-of-type {
   margin-right: 0;
+}
+
+/** Breakpoints:
+  sm: min-width: 640px;
+**/
+
+@media (min-width: 640px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

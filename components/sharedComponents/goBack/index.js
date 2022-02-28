@@ -1,13 +1,12 @@
 import React from "react";
-import Link from "next/link";
+import { useRouter } from "next/router";
 import styles from "./goBack.module.css";
 
 const GoBack = () => {
+  const router = useRouter();
   return (
     <div className={styles.goBackContainer}>
-      <Link className={styles.goBack} href="/">
-        Back to home
-      </Link>
+      <button onClick={() => router.back()}>Go Back</button>
     </div>
   );
 };

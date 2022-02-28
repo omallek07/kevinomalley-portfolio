@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Date from "../../sharedComponents/dateDisplay/index.js";
+import GoBack from "../../sharedComponents/goBack/index.js";
 
 const Projects = ({ allProjectsData }) => {
   const renderedProjects = allProjectsData.map(({ id, date, title }) => (
@@ -17,6 +18,7 @@ const Projects = ({ allProjectsData }) => {
 
   return (
     <section>
+      <GoBack />
       <h2>Projects</h2>
       <ul>{renderedProjects}</ul>
     </section>

@@ -1,13 +1,15 @@
 .buttonWrapper {
   margin-top: 1.25rem;
+  text-align: center;
 }
 
 .button {
-  background-color: var(--text-green);
+  background-color: var(--text-orange);
   cursor: pointer;
   color: white;
   outline: 0;
   border: 0px;
+  border-radius: var(--border-radius);
 
   padding-top: 1rem /* 16px */;
   padding-bottom: 1rem /* 16px */;
@@ -15,10 +17,11 @@
   line-height: 1.75rem /* 28px */;
   padding-left: 2.5rem /* 40px */;
   padding-right: 2.5rem /* 40px */;
+  width: 100%;
 }
 
 .button:hover {
-  background-color: var(--text-green);
+  background-color: var(--text-orange);
 }
 
 /** sm breakpoint **/

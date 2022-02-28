@@ -29,7 +29,7 @@ const Header = ({ pageTitle }) => {
   return (
     <header className={styles.header}>
       <div>
-        <h1 className={styles.navHeader}>{`Kevin O'Malley - ${pageTitle}`}</h1>
+        <h1 className={styles.navHeader}>Kevin O'Malley</h1>
       </div>
       <nav className={styles.navContainer}>{renderedNavLinks}</nav>
     </header>
