@@ -22,8 +22,6 @@
 }
 
 .aboutMeContainer {
-  display: flex;
-  align-items: center;
   margin: 0 auto;
   padding: 1.5rem;
   border-radius: var(--border-radius);
@@ -31,10 +29,16 @@
 }
 
 .profileShotWrapper {
-  margin-right: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  float: left;
 }
 
 .profileShotWrapper img {
   border-radius: var(--border-radius);
   overflow: hidden;
+}
+
+.textContainer {
+  text-align: start;
 }

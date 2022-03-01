@@ -1,6 +1,8 @@
 ---
 title: "Welcome"
 date: "2022-01-11"
+shortDescription: "An introduction about myself."
+imgUrl: "/static/kevinMarried.jpg"
 ---
 
 # Welcome everyone.

@@ -1,26 +1,17 @@
 import React from "react";
-import Link from "next/link";
-import Date from "../../sharedComponents/dateDisplay/index.js";
 import GoBack from "../../sharedComponents/goBack/index.js";
+import Card from "../../sharedComponents/card/index.js";
 
 const Posts = ({ allPostsData }) => {
-  const renderedPosts = allPostsData.map(({ id, date, title }) => (
-    <li key={id}>
-      <Link href={`/posts/${id}`}>
-        <a>{title}</a>
-      </Link>
-      <br />
-      <small>
-        <Date dateString={date} />
-      </small>
-    </li>
+  const renderedPosts = allPostsData.map(({ id, ...props }) => (
+    <Card key={id} href={`/posts/${id}`} {...props} />
   ));
 
   return (
     <section>
       <GoBack />
       <h2>Blog</h2>
-      <ul>{renderedPosts}</ul>
+      <div className="cardLayout">{renderedPosts}</div>
     </section>
   );
 };

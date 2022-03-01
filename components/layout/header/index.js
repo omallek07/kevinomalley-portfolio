@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import styles from "./header.module.css";
 
-const Header = ({ pageTitle }) => {
+const Header = () => {
   const navLinks = [
     {
       link: "/",
