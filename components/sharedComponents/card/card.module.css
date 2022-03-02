@@ -7,6 +7,10 @@
   margin-bottom: 0.75rem /* 12px */;
 }
 
+.card {
+  justify-content: center;
+}
+
 .cardHeader {
   text-overflow: ellipsis;
   white-space: nowrap;

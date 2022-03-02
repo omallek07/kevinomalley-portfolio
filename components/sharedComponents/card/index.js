@@ -9,7 +9,7 @@ import Date from "../dateDisplay";
 const Card = (props) => {
   return (
     <Link href={props.href}>
-      <a className="card">
+      <a className={styles.card}>
         <div className={cls("glass", styles.container)}>
           <div className={styles.cardHeaderWrapper}>
             <h2 className={styles.cardHeader}>{props.title}</h2>

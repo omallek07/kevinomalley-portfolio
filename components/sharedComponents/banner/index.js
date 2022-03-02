@@ -14,7 +14,7 @@ const Banner = ({ title }) => {
   }
 
   return (
-    <div className={styles.container}>
+    <div className={styles.banner}>
       <h1 className={styles.title}>{titleRender}</h1>
     </div>
   );

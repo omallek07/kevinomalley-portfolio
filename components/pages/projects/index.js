@@ -1,27 +1,17 @@
 import React from "react";
-import Link from "next/link";
-import Date from "../../sharedComponents/dateDisplay/index.js";
-import GoBack from "../../sharedComponents/goBack/index.js";
+import Card from "../../sharedComponents/card/index.js";
+import Banner from "../../sharedComponents/banner/index.js";
 
 const Projects = ({ allProjectsData }) => {
-  const renderedProjects = allProjectsData.map(({ id, date, title }) => (
-    <li key={id}>
-      <Link href={`/projects/${id}`}>
-        <a>{title}</a>
-      </Link>
-      <br />
-      <small>
-        <Date dateString={date} />
-      </small>
-    </li>
+  const renderedProjects = allProjectsData.map(({ id, ...props }) => (
+    <Card key={id} href={`/projects/${id}`} {...props} />
   ));
 
   return (
-    <section>
-      <GoBack />
-      <h2>Projects</h2>
+    <>
+      <Banner title="My Projects" />
       <ul>{renderedProjects}</ul>
-    </section>
+    </>
   );
 };
 

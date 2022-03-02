@@ -7,11 +7,7 @@ import {
 } from "../../lib/handleMarkdownData";
 
 export default function ProjectPage({ projectData }) {
-  return (
-    <Layout pageTitle={projectData.title}>
-      <Project projectData={projectData} />
-    </Layout>
-  );
+  return <Project projectData={projectData} />;
 }
 
 // Return a list of possible value for id

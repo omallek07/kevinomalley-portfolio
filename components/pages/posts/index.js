@@ -1,6 +1,6 @@
 import React from "react";
-import GoBack from "../../sharedComponents/goBack/index.js";
 import Card from "../../sharedComponents/card/index.js";
+import Banner from "../../sharedComponents/banner/index.js";
 
 const Posts = ({ allPostsData }) => {
   const renderedPosts = allPostsData.map(({ id, ...props }) => (
@@ -8,11 +8,10 @@ const Posts = ({ allPostsData }) => {
   ));
 
   return (
-    <section>
-      <GoBack />
-      <h2>Blog</h2>
-      <div className="cardLayout">{renderedPosts}</div>
-    </section>
+    <>
+      <Banner title={"Blog Posts"} />
+      <section className="cardLayout"> {renderedPosts}</section>
+    </>
   );
 };
 

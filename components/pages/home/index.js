@@ -7,17 +7,13 @@ import AboutMe from "./aboutMe";
 
 const Home = () => {
   return (
-    <>
-      <section className={styles.bannerRow}>
-        <Banner title="Welcome to my page!" subtitle="Kevin O'Malley" />
-      </section>
+    <div className="homePage">
+      <Banner title="Welcome to my page!" />
       <section>
         <AboutMe />
       </section>
-      <section>
-        <Button buttonText="Check out my resume" link="/projects" />
-      </section>
-    </>
+      <Button buttonText="Check out my resume" link="/projects" />
+    </div>
   );
 };
 

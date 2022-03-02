@@ -4,7 +4,7 @@ import styles from "./home.module.css";
 
 const AboutMe = () => {
   const aboutMeText =
-    "Hello everyone! Thank you for visiting my site. A little about me: I am a professional frontend developer. I am always curius to learn more and dig into the roots of problems to find the solution. I currently reside in Chicago with my wife and my two dachshunds. Please check out my blog posts, projects, or resume if interested.";
+    "Hello everyone! Thank you for visiting my site. A little about me: I am a Fullstack Academy graduate and a professional Javascript developer. I love exploring the world of code and sharpening my skillset with personal projects and online courses. I currently reside in Chicago with my wife and our two dogs, Ollie and Chloe. Please check out my portfolio and feel free to email me to reach out!";
   return (
     <div className={styles.aboutMeContainer}>
       <div className={styles.profileShotWrapper}>
