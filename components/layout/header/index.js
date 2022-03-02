@@ -16,6 +16,10 @@ const Header = () => {
       link: "/projects",
       label: "Projects",
     },
+    {
+      link: "/portfolio",
+      label: "Portfolio",
+    },
   ];
 
   const renderedNavLinks = navLinks.map((navLink) => {
