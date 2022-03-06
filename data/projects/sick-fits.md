@@ -1,6 +1,6 @@
 ---
 title: "Sick Fits"
-date: "2022-01-11"
+date: "2020-01-11"
 shortDescription: "Advanced React and GraphQL Ecommerce App"
 imgUrl: "/static/SickFits.png"
 ---

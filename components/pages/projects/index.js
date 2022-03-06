@@ -10,7 +10,7 @@ const Projects = ({ allProjectsData }) => {
   return (
     <>
       <Banner title="My Projects" />
-      <ul>{renderedProjects}</ul>
+      <section className="cardLayout"> {renderedProjects}</section>
     </>
   );
 };
