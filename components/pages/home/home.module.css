@@ -1,11 +1,3 @@
-.aboutMeContainer {
-  margin: 0 auto;
-  padding: 1.5rem;
-  border-radius: var(--border-radius);
-  background: rgba(0, 0, 0, 0.6);
-  box-shadow: var(--box-shadow);
-}
-
 .profileShotWrapper {
   padding-right: 1rem;
   padding-top: 0.5rem;
@@ -17,6 +9,23 @@
   overflow: hidden;
 }
 
-.textContainer {
-  text-align: start;
+.textContent span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/**
+Breakpoints:
+------------
+sm: min-width: 640px; //small device
+md: min-width: 768px; // medium device
+lg: min-width: 1024px; // large device
+xl: min-width: 1280px; // extra large device
+2xl: min-width: 1536px; // 2 x extra large device
+**/
+
+@media screen and (min-width: 1024px) {
+  .profileShotWrapper {
+    float: none;
+  }
 }

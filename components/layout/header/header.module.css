@@ -8,7 +8,7 @@
 
 .navHeader {
   opacity: 1;
-  color: white;
+  color: var(--text-white-100);
   font-size: 1.2rem;
   display: inline;
 }
@@ -17,6 +17,7 @@
   font-size: 1rem;
   margin-right: 0.5rem;
   white-space: nowrap;
+  color: var(--text-white-100);
 }
 
 .navItem:last-of-type {

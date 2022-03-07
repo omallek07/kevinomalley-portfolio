@@ -12,7 +12,7 @@ const Home = () => {
       <section>
         <AboutMe />
       </section>
-      <Button buttonText="Check out my resume" link="/projects" />
+      <Button buttonText="Check out my resume" link="/portfolio" />
     </div>
   );
 };

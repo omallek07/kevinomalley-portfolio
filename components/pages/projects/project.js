@@ -12,6 +12,7 @@ const Project = ({ projectData }) => {
         <title>{title}</title>
       </Head>
       <section className="glass">
+        <div>{title}</div>
         <div>
           <Date dateString={date} />
         </div>
