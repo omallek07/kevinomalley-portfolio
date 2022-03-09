@@ -1,17 +1,7 @@
 .profileShotWrapper {
-  padding-right: 1rem;
+  padding-right: 0.5rem;
   padding-top: 0.5rem;
   float: left;
-}
-
-.profileShotWrapper img {
-  border-radius: var(--border-radius);
-  overflow: hidden;
-}
-
-.textContent span {
-  display: block;
-  margin-bottom: 5px;
 }
 
 /**
