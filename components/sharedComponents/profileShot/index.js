@@ -1,15 +1,14 @@
 import React from "react";
 import Image from "next/image";
-import styles from "./profileShot.module.css";
 
 const ProfileShot = () => {
   return (
     <Image
-      className={styles.profileShot}
       src="/static/KevinProfile2022.jpg"
-      height={120}
-      width={80}
-      alt="Kevin O'Malley"
+      height={690}
+      width={500}
+      layout="responsive"
+      alt="Kevin O'Malley Profile Picture"
     />
   );
 };

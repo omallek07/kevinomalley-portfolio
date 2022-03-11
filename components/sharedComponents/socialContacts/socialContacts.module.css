@@ -2,10 +2,32 @@
   display: flex;
 }
 
+.imageWrapper {
+  margin-right: 0.25rem;
+  width: 15px;
+  height: 15px;
+  margin-bottom: 2px;
+}
+
 .socialContact {
-  margin-right: 15px;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
 }
 
 .socialContact:last-child {
   margin-right: 0;
+}
+
+/** lg breakpoint **/
+@media (min-width: 1024px) {
+  .socialContact {
+    margin-right: 1.5rem;
+  }
+  .imageWrapper {
+    width: 25px;
+    height: 25px;
+    margin-right: 0.5rem;
+    margin-bottom: 5px;
+  }
 }

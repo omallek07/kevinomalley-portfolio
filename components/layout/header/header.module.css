@@ -24,8 +24,14 @@
   margin-right: 0;
 }
 
-/** Breakpoints:
-  sm: min-width: 640px;
+/**
+Breakpoints:
+------------
+sm: min-width: 640px; //small device
+md: min-width: 768px; // medium device
+lg: min-width: 1024px; // large device
+xl: min-width: 1280px; // extra large device
+2xl: min-width: 1536px; // 2 x extra large device
 **/
 
 @media (min-width: 640px) {
@@ -33,5 +39,18 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navItem,
+  .navHeader {
+    font-size: var(--large-font-size);
+  }
+  .navItem {
+    margin-right: 1rem;
+  }
+  .navItem:last-of-type {
+    margin-right: 0;
   }
 }

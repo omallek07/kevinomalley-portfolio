@@ -1,7 +1,9 @@
 .profileShotWrapper {
-  padding-right: 0.5rem;
+  padding-right: 1rem;
   padding-top: 0.5rem;
   float: left;
+  height: 300px;
+  width: 205px;
 }
 
 /**
@@ -14,8 +16,25 @@ xl: min-width: 1280px; // extra large device
 2xl: min-width: 1536px; // 2 x extra large device
 **/
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 640px) {
+  .aboutMe {
+    display: flex;
+    align-items: center;
+  }
   .profileShotWrapper {
+    height: 345px;
+    width: 250px;
+    height: auto;
     float: none;
+    padding: 0;
+  }
+  .textContainer {
+    padding: 0 1rem 0 2rem;
+    width: 80%;
+    font-size: var(--large-font-size);
+  }
+  .textContainer span {
+    display: block;
+    margin-bottom: 0.5rem;
   }
 }

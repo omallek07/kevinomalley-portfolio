@@ -25,7 +25,9 @@ const Card = (props) => {
               height={160}
             />
           </div>
-          <p>{props.shortDescription}</p>
+          <div className={styles.cardDescription}>
+            <p>{props.shortDescription}</p>
+          </div>
         </div>
       </a>
     </Link>

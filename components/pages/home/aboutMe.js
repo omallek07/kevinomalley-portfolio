@@ -1,3 +1,4 @@
+import cls from "classnames";
 import React from "react";
 import ProfileShot from "../../sharedComponents/profileShot";
 import styles from "./home.module.css";
@@ -13,7 +14,7 @@ const AboutMe = () => {
   const renderedText = spanArray.map((spanText) => <span>{spanText}</span>);
 
   return (
-    <div className="glass">
+    <div className={cls("glass", styles.aboutMe)}>
       <div className={styles.profileShotWrapper}>
         <ProfileShot />
       </div>

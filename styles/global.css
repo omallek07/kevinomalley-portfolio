@@ -14,6 +14,8 @@
   --text-white-100: rgba(229, 231, 235, 1);
   --box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
   --border-radius: 7px;
+
+  --large-font-size: 1.5rem;
 }
 
 @font-face {
@@ -107,7 +109,6 @@ button:focus {
   outline: 5px auto -webkit-focus-ring-color;
 }
 
-/* glass-morphism */
 /* glass-morphism */
 .glass {
   background: hsla(0, 0%, 100%, 0.75);
