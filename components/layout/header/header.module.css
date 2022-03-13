@@ -43,6 +43,9 @@ xl: min-width: 1280px; // extra large device
 }
 
 @media screen and (min-width: 1024px) {
+  .header {
+    margin-bottom: 2rem;
+  }
   .navItem,
   .navHeader {
     font-size: var(--large-font-size);
