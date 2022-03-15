@@ -2,7 +2,7 @@
   z-index: 1;
   width: 100%;
   padding: 0.5rem;
-  color: white;
+  color: var(--text-orange);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -10,6 +10,7 @@
 
 .copyRight {
   margin-top: 0.5rem;
+  color: var(--text-white-100);
 }
 
 /** lg breakpoint **/
