@@ -5,7 +5,8 @@ import Banner from "../../sharedComponents/banner";
 import Button from "../../sharedComponents/button";
 import AboutMe from "./aboutMe";
 
-const Home = () => {
+const Home = (props) => {
+  console.log("props", props);
   return (
     <div className="homePage">
       <Banner title="Welcome to my page!" />

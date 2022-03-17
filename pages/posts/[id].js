@@ -1,4 +1,4 @@
-import Post from "../../components/pages/posts/post";
+import MarkdownPage from "../../components/sharedComponents/markdownPage";
 
 import {
   getAllMarkdownIds,
@@ -6,7 +6,7 @@ import {
 } from "../../lib/handleMarkdownData";
 
 export default function PostPage({ postData }) {
-  return <Post postData={postData} />;
+  return <MarkdownPage markdownData={postData} />;
 }
 
 // Return a list of possible value for id

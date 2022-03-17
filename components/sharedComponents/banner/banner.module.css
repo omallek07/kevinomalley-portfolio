@@ -54,6 +54,9 @@
 
 /** md breakpoint **/
 @media (min-width: 768px) {
+  .banner {
+    margin-bottom: 2rem;
+  }
   .title {
     font-size: 3.75rem /* 60px */;
     line-height: 1;
@@ -61,10 +64,9 @@
 }
 
 /** lg breakpoint **/
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .banner {
     border: none;
-    margin-bottom: 2rem;
     padding: 0;
   }
   .banner:before {
@@ -78,11 +80,8 @@
     font-size: 4rem;
     line-height: 1;
   }
-}
-
-@media (min-width: 1280px) {
   .title span {
     display: inline;
     text-transform: capitalize;
   }
-} ;
+}

@@ -11,7 +11,7 @@
 .socialContact {
   margin-right: 1rem;
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .socialContact:last-child {
@@ -24,9 +24,8 @@
     margin-right: 1.5rem;
   }
   .imageWrapper {
-    width: 25px;
-    height: 25px;
-    margin-right: 0.5rem;
-    margin-bottom: 5px;
+    width: 22px;
+    height: 22px;
+    margin-right: 0.25rem;
   }
 }

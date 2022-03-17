@@ -1,5 +1,4 @@
-import Project from "../../components/pages/projects/project";
-import Layout from "../../components/layout";
+import MarkdownPage from "../../components/sharedComponents/markdownPage";
 
 import {
   getAllMarkdownIds,
@@ -7,7 +6,7 @@ import {
 } from "../../lib/handleMarkdownData";
 
 export default function ProjectPage({ projectData }) {
-  return <Project projectData={projectData} />;
+  return <MarkdownPage markdownData={projectData} />;
 }
 
 // Return a list of possible value for id

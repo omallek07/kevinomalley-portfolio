@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./portfolio.module.css";
-import Banner from "../../sharedComponents/banner";
 
 const Portfolio = () => {
   return (

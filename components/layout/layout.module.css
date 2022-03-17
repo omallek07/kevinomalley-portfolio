@@ -14,3 +14,27 @@
   padding-right: 0.25rem;
   overflow-y: auto;
 }
+
+/**
+Breakpoints:
+------------
+sm: min-width: 640px; //small device
+md: min-width: 768px; // medium device
+lg: min-width: 1024px; // large device
+xl: min-width: 1280px; // extra large device
+2xl: min-width: 1536px; // 2 x extra large device
+**/
+@media screen and (min-width: 768px) {
+  .main {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .main {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

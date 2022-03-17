@@ -32,15 +32,6 @@ const Header = () => {
     return (
       <Link key={label} href={link}>
         <div className={styles.navItem}>
-          <div className={styles.imageWrapper}>
-            <Image
-              alt={label}
-              src={icon}
-              height={30}
-              width={30}
-              layout="responsive"
-            />
-          </div>
           <a className={styles.navLink}>{label}</a>
         </div>
       </Link>

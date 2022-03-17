@@ -4,6 +4,14 @@
   float: left;
   height: 300px;
   width: 205px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+}
+
+.textContainer,
+.title {
+  color: var(--bg-dark);
 }
 
 /**

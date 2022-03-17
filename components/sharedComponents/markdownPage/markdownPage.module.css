@@ -1,0 +1,36 @@
+.markdownPage {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  color: var(--bg-dark);
+  font-size: var(--large-font-size);
+}
+
+.content {
+  padding: 2rem;
+  background: var(--bg-light);
+  color: var(--text-black);
+  font-size: var(--medium-font-size);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  z-index: 1;
+}
+
+.imageWrapper {
+  margin-right: 1.5rem;
+  height: 150px;
+  width: 200px;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+}
+
+.content img {
+  height: 600px;
+  width: 650px;
+}

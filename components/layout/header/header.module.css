@@ -26,16 +26,11 @@
 .navItem:last-of-type {
   margin-right: 0;
 }
-.imageWrapper {
-  height: 30px;
-  width: 30px;
-}
 
 .navLink {
-  padding-left: 0.5rem;
   font-size: var(--large-font-size);
   white-space: nowrap;
-  color: var(--text-orange);
+  color: var(--text-white-100);
   cursor: pointer;
 }
 
@@ -59,7 +54,8 @@ xl: min-width: 1280px; // extra large device
 
 @media screen and (min-width: 1024px) {
   .header {
-    margin-bottom: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
   .navItem,
   .navHeader {
