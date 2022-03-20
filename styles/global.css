@@ -170,13 +170,6 @@ button:hover {
   }
 }
 @media screen and (min-width: 1280px) {
-  html,
-  body {
-    background-image: url("/static/mesh-gradient.png");
-    background-repeat: no-repeat;
-    background-position: 50% 20%;
-    background-size: cover;
-  }
   .cardLayout {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
