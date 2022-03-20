@@ -9,11 +9,6 @@
   overflow: hidden;
 }
 
-.textContainer,
-.title {
-  color: var(--bg-dark);
-}
-
 /**
 Breakpoints:
 ------------

@@ -7,7 +7,6 @@
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
-  color: var(--bg-dark);
   font-size: var(--large-font-size);
 }
 
@@ -21,6 +20,22 @@
   z-index: 1;
 }
 
+.content img {
+  height: 300px;
+  width: 300px;
+  border-radius: var(--border-radius);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+
+.content p {
+  margin-bottom: 0.5rem;
+}
+
 .imageWrapper {
   margin-right: 1.5rem;
   height: 150px;
@@ -28,9 +43,4 @@
   border-radius: var(--border-radius);
   overflow: hidden;
   box-shadow: var(--box-shadow);
-}
-
-.content img {
-  height: 600px;
-  width: 650px;
 }

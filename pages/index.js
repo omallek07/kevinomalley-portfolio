@@ -1,14 +1,25 @@
 import Home from "../components/pages/home";
-import { getSortedMarkdownData } from "../lib/handleMarkdownData";
+import {
+  getSortedMarkdownData,
+  getMarkdownData,
+} from "../lib/handleMarkdownData";
 
 export async function getStaticProps() {
-  const latestPostsData = getSortedMarkdownData("posts")[0];
-  const latestProjectData = getSortedMarkdownData("projects")[0];
+  const latestPostsData = await getSortedMarkdownData("posts")[0];
+  const latestProjectData = await getSortedMarkdownData("projects")[0];
+  const latestPostsMarkdown = await getMarkdownData(
+    "posts",
+    latestPostsData.id
+  );
+  const latestProjectsMarkdown = await getMarkdownData(
+    "projects",
+    latestProjectData.id
+  );
 
   return {
     props: {
-      latestPost: latestPostsData,
-      latestProject: latestProjectData,
+      latestPost: latestPostsMarkdown,
+      latestProject: latestProjectsMarkdown,
     },
   };
 }

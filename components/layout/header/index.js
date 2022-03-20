@@ -41,7 +41,9 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div>
-        <h1 className={styles.navHeader}>Kevin O'Malley</h1>
+        <Link alt="Home" href="/">
+          <h1 className={styles.navHeader}>Kevin O'Malley</h1>
+        </Link>
       </div>
       <nav className={styles.navContainer}>{renderedNavLinks}</nav>
     </header>

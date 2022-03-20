@@ -8,8 +8,9 @@ const Portfolio = () => {
       <section className={styles.portfolioWrapper}>
         <Image
           src="/static/PortfolioJPEG.jpg"
-          height={700}
-          width={500}
+          height={2400}
+          width={1800}
+          priority
           alt="Kevin O'Malley Portfolio"
         />
       </section>
