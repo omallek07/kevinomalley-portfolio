@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./footer.module.css";
-
 import SocialContacts from "../../sharedComponents/socialContacts";
 
 const Footer = () => {
