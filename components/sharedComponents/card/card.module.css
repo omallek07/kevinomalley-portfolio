@@ -38,7 +38,7 @@
 @media (min-width: 1024px) {
   .cardHeader {
     width: 16rem /* 256px */;
-    font-size: var(--large-font-size);
+    font-size: var(--medium-font-size);
   }
 }
 

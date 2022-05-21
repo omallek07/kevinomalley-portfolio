@@ -7,22 +7,18 @@
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
-  font-size: var(--large-font-size);
+  font-size: var(--medium-font-size);
 }
 
 .content {
-  padding: 2rem;
-  background: var(--bg-light);
   color: var(--text-black);
-  font-size: var(--medium-font-size);
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow-inset);
+  font-size: var(--base-font-size);
   z-index: 1;
 }
 
 .content img {
   height: 300px;
-  width: 300px;
+  width: auto;
   border-radius: var(--border-radius);
   border-radius: var(--border-radius);
   overflow: hidden;
@@ -32,22 +28,38 @@
   margin-right: 1rem;
 }
 
+.content a {
+  text-decoration: underline;
+}
+
+.content a:hover {
+  font-style: italic;
+}
+
 .content p {
   margin-bottom: 0.5rem;
 }
 
 .content h2,
-.content h3 {
+.content h3,
+.content h4 {
   margin-bottom: 1rem;
 }
 
 .content pre {
   padding: 1rem;
-  margin: 0.5rem 0;
+  margin-bottom: 0.5rem;
+  background: var(--bg-light);
+}
+
+.content code {
+  font-size: var(--small-font-size);
+  white-space: pre-wrap;
 }
 
 .content p code {
-  color: var(--text-black);
+  font-size: var(--base-font-size);
+  font-style: italic;
 }
 
 .imageWrapper {
@@ -56,5 +68,30 @@
   width: 200px;
   border-radius: var(--border-radius);
   overflow: hidden;
-  box-shadow: var(--box-shadow);
+}
+
+/**
+Breakpoints:
+------------
+sm: min-width: 640px; //small device
+md: min-width: 768px; // medium device
+lg: min-width: 1024px; // large device
+xl: min-width: 1280px; // extra large device
+2xl: min-width: 1536px; // 2 x extra large device
+**/
+
+@media screen and (min-width: 768px) {
+  .content {
+    padding: 2rem;
+    background: var(--bg-light);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow-inset);
+    font-size: var(--medium-font-size);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    font-size: var(--large-font-size);
+  }
 }

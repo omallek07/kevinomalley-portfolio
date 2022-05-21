@@ -9,6 +9,8 @@ imgUrl: "/static/BurgerApp.png"
 
 [My Burger App](https://react-burger-app-4abd8.firebaseapp.com)
 
+![Burger App](/static/BurgerApp.png)
+
 Description: MyBurger allows users to create an account, customize a burger, and fill out delivery information to have the burger "delivered" to their address. Their orders and user information persist in a Firebase database and users can access all of their previous orders.
 
 Web project was instructed by Maximillian Schwarzmueller in this course: https://www.udemy.com/react-the-complete-guide-incl-redux/learn/v4/content

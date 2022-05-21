@@ -1,7 +1,7 @@
 ---
-title: "VSCode"
-date: "2022-03-27"
-shortDescription: "Sharing the snippets and key shortcuts that I use in VSCode"
+title: "VSCode User Snippets"
+date: "2022-03-26"
+shortDescription: "Sharing user code snippets I use regularly in VSCode."
 imgUrl: "/static/VSCode.png"
 ---
 
@@ -11,10 +11,8 @@ I am listing out my VSCode javascript user snippets that I use on a daily basis.
 
 I can also tab through these snippets and fill out code in the specified spots that I want (see $1, $2, etc. This tells the snippets where to place the order of tabs)
 
-To open / create user snippets - hit `Shift Cmd P` and type in User Snippets.
-Open up 'Preferences: Configure User Snippets' and create a new snippets file. (Mine is named global_javascript_snippets;)
-
-I am also listing out some useful key shortcuts that I use as well. These help a ton with navigating through my projects.
+To open / create user snippets - hit `Shift + Cmd + P` and type in User Snippets.
+Open up 'Preferences: Configure User Snippets' and create a new snippets file. (Mine is named global_javascript_snippets)
 
 ## User Snippets
 
@@ -88,94 +86,3 @@ I am also listing out some useful key shortcuts that I use as well. These help a
   }
 }
 ```
-
-## Useful VSCode Key Shortcuts
-
-(Up and Down, Left and Right mean the corresponding arrow keys, just a fyi)
-
-### File Navigation
-
-`Shift Command E`
-
-- Open file explorer sidebar
-
-`Shift B`
-
-- Toggle view of sidebar
-
-`Option Command Left` or `Option Command Right`
-
-- Navigate between opened files in tab
-
-`Cmd P`
-
-- Search Files By Name.
-
-- Hold Cmd and keep tapping P to navigate through files. Double tap P to go back to previously opened file.
-
-`Ctrl Tab`
-
-- Another way to tab through opened files. Also easy to quickly switch between two files.
-
-`Ctrl -` or `Ctrl Shift -`
-
-- Navigate between files and land right where the edit cursor was last placed.
-- This is super useful for switching between files and jumping straight into your code.
-
-`Command \`
-
-- Split opened file into side-by-side editing
-
-`Command W`
-
-- Close active window
-
-### Code Navigation
-
-`Command Up`
-
-- Go to top of file
-
-`Command Down`
-
-- Go to bottom of file
-
-`Control G`
-
-- Navigate to a specific line in code
-
-`Command D`
-
-- Select a word and then select all matching words below line (keep tapping D)
-
-`Shift Command O`
-
-- Navigate to a symbol within your code (symbols include variables, function names, etc)
-
-`Option Command Up` or `Option Command Down`
-
-- Duplicate cursor to above or below lines
-
-`Option Up` or `Option Down`
-
-- Move selected line up or down
-
-`Shift Command Up` or `Shift Command Down`
-
-- Copy existing line to above or below line
-
-`Shift Command Enter`
-
-- Move cursor to new line above
-
-`Command Enter`
-
-- Move cursor to new line below
-
-`Shift Command \`
-
-- Hover on opening brack and use this command to automatically navigate to closing bracket in code.
-
-`Shift Command K`
-
-- Delete entire line

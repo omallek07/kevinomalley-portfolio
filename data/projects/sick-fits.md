@@ -5,9 +5,14 @@ shortDescription: "Advanced React and GraphQL Ecommerce App"
 imgUrl: "/static/SickFits.png"
 ---
 
-# Sick Fits App - Wes Bos
+# Advanced React and GraphQL course by Wes Bos
 
-## Technologies
+![Sick Fits](/static/SickFits.png)
 
-- React
-- GraphQL
+## Summary
+
+A Wes Bos course that builds an online ecommerce store. Technologies are focused on React and Apollo on the frontend and Node.js and GraphQl on the backend. Authentication, Stripe, Automated Email delivery are also implemented.
+
+## My Repository
+
+[Sick Fits Github](https://github.com/omallek07/sick-fits-bos)

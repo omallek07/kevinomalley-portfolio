@@ -1,0 +1,42 @@
+.backToTop {
+  position: fixed;
+  bottom: 20%;
+  right: 8%;
+  font-size: 50px;
+  z-index: 10;
+  background: var(--text-orange);
+  opacity: 0.3;
+  color: white;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  border: none;
+  transition: all 500ms ease;
+}
+
+.backToTop:hover {
+  opacity: 1;
+}
+
+/**
+Breakpoints:
+------------
+sm: min-width: 640px; //small device
+md: min-width: 768px; // medium device
+lg: min-width: 1024px; // large device
+xl: min-width: 1280px; // extra large device
+2xl: min-width: 1536px; // 2 x extra large device
+**/
+
+@media screen and (min-width: 1024px) {
+  .backToTop {
+    bottom: 25%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .backToTop {
+    background: none;
+    box-shadow: none;
+    bottom: 70px;
+  }
+}

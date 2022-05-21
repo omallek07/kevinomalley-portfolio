@@ -3,24 +3,25 @@ import styles from "./socialContacts.module.css";
 import Image from "next/image";
 
 // TODO - FIND logos for each contact
-const SocialContacts = () => {
+const SocialContacts = ({ isInverted = false }) => {
+  const useInvertedColor = isInverted ? "orange" : "white";
   const socialContacts = [
     {
       title: "Github",
       link: "https://github.com/omallek07",
-      icon: "/icons/github-icon-white.svg",
+      icon: `/icons/github-icon-${useInvertedColor}.svg`,
       alt: "My Github Profile",
     },
     {
       title: "LinkedIn",
       link: "https://www.linkedin.com/in/kevin-omalley/",
-      icon: "/icons/linkedin-icon-white.svg",
+      icon: `/icons/linkedin-icon-${useInvertedColor}.svg`,
       alt: "My LinkedIn Profile",
     },
     {
       title: "Email",
       link: "mailto:omallek@gmail.com",
-      icon: "/icons/email-icon-white.svg",
+      icon: `/icons/email-icon-${useInvertedColor}.svg`,
       alt: "My Email Address",
     },
   ];
