@@ -10,17 +10,17 @@ const Home = (props) => {
   const { latestPost, latestProject } = props;
   return (
     <div className="homePage">
-      <Banner title="Welcome to my page!" />
+      <Banner title="Welcome to my site!" />
       <section>
         <AboutMe />
       </section>
       <h1 className="subHeader">Latest Post</h1>
       <section>
-        <MarkdownPage markdownData={latestPost} />
+        <MarkdownPage isHomePageDisplay markdownData={latestPost} />
       </section>
       <h1 className="subHeader">Latest Project</h1>
       <section>
-        <MarkdownPage markdownData={latestProject} />
+        <MarkdownPage isHomePageDisplay markdownData={latestProject} />
       </section>
       <Button buttonText="Check out my resume" link="/portfolio" />
     </div>

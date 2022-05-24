@@ -7,7 +7,7 @@ const Portfolio = () => {
     <>
       <section className={styles.portfolioWrapper}>
         <Image
-          src="/static/PortfolioJPEG.jpg"
+          src="/static/KevinOMalleyResume2022.jpg"
           height={2400}
           width={1800}
           priority

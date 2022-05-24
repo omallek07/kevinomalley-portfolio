@@ -4,14 +4,17 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "./markdownPage.module.css";
 import cls from "classnames";
+import { is } from "date-fns/locale";
 
-const MarkdownPage = ({ markdownData }) => {
+const MarkdownPage = ({ markdownData, isHomePageDisplay }) => {
   const { title, date, contentHtml, imgUrl } = markdownData;
   return (
     <>
-      <Head>
-        <title>{title}</title>
-      </Head>
+      {!isHomePageDisplay && (
+        <Head>
+          <title>{title}</title>
+        </Head>
+      )}
       <div className={cls("glass", styles.markdownPage)}>
         <div className={styles.header}>
           <div className={styles.imageWrapper}>

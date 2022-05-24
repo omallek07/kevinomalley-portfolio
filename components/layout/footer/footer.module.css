@@ -13,11 +13,18 @@
   color: var(--text-white-100);
 }
 
+@media (min-width: 768px) {
+  .footer {
+    padding: 1rem 1.5rem;
+  }
+}
+
 /** lg breakpoint **/
 @media (min-width: 1024px) {
   .footer {
     flex-direction: row;
     justify-content: space-between;
     font-size: var(--large-font-size);
+    padding: 0;
   }
 }
