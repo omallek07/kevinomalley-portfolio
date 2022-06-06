@@ -6,7 +6,7 @@ import SocialContacts from "../../sharedComponents/socialContacts";
 import styles from "./home.module.css";
 
 const AboutMe = () => {
-  const aboutMetext = `Clean code, problem solving, awkward silences in large group zoom meetings...I love it all. My name is Kevin O'Malley and welcome to my web page. I am a full stack JavaScript developer with a focus in React and Node.js. Please check out my projects and blog posts or
+  const aboutMetext = `Clean code, problem solving, having my dog jump on my keyboard and dsfk;adsfld'gf...I love it all. My name is Kevin O'Malley and welcome to my web page. I am a full stack software engineer with a focus in JavaScript. Please check out my projects and blog posts or
   `;
   const aboutMeBlogPost = (
     <Link alt="About me" href="/posts/introduction">
