@@ -14,13 +14,13 @@ const Home = (props) => {
       <section>
         <AboutMe />
       </section>
-      <h1 className="subHeader">Latest Post</h1>
-      <section>
-        <MarkdownPage isHomePageDisplay markdownData={latestPost} />
-      </section>
       <h1 className="subHeader">Latest Project</h1>
       <section>
         <MarkdownPage isHomePageDisplay markdownData={latestProject} />
+      </section>
+      <h1 className="subHeader">Latest Post</h1>
+      <section>
+        <MarkdownPage isHomePageDisplay markdownData={latestPost} />
       </section>
       <Button buttonText="Check out my resume" link="/portfolio" />
     </div>

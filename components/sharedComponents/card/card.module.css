@@ -3,16 +3,6 @@
   margin-bottom: 0.75rem /* 12px */;
 }
 
-.card {
-  justify-content: center;
-  transition: all 400ms ease;
-}
-.card:hover {
-  text-decoration: none;
-  transform: translateY(-10px);
-  box-shadow: var(--box-shadow-hover);
-}
-
 .cardHeader {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -21,6 +11,11 @@
   font-weight: 800;
   overflow: hidden;
   width: 16rem /* 256px */;
+}
+
+.card {
+  justify-content: center;
+  transition: all 400ms ease;
 }
 
 .cardImageWrapper {
@@ -45,5 +40,11 @@
 @media (min-width: 768px) {
   .cardHeader {
     width: 16rem /* 256px */;
+  }
+
+  .card:hover {
+    text-decoration: none;
+    transform: translateY(-10px);
+    box-shadow: var(--box-shadow-hover);
   }
 }
