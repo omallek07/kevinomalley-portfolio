@@ -75,13 +75,13 @@ Open up 'Preferences: Configure User Snippets' and create a new snippets file. (
   "JS Arrow Function": {
     "scope": "javascript,typescript",
     "prefix": "fca",
-    "body": ["const $1 = (($2) => { $3 };"],
+    "body": ["const $1 = ($2) => { $3 };"],
     "description": "Arrow function"
   },
   "Async JS Arrow Function": {
     "scope": "javascript,typescript",
     "prefix": "afca",
-    "body": ["const $1 = (async($2) => { const $3 = await $4; };"],
+    "body": ["const $1 = async ($2) => { const $3 = await $4; };"],
     "description": "Async arrow function"
   }
 }

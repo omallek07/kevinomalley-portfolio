@@ -47,15 +47,10 @@ xl: min-width: 1280px; // extra large device
 
 @media (min-width: 640px) {
   .header {
+    padding: 1rem 1.5rem;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-  }
-}
-
-@media (min-width: 768px) {
-  .header {
-    padding: 1rem 1.5rem;
   }
 }
 
