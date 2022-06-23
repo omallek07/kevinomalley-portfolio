@@ -83,6 +83,12 @@ Open up 'Preferences: Configure User Snippets' and create a new snippets file. (
     "prefix": "afca",
     "body": ["const $1 = async ($2) => { const $3 = await $4; };"],
     "description": "Async arrow function"
+  },
+  "Styles Container": {
+    "scope": "javascript,typescript",
+    "prefix": "cs",
+    "body": ["className={styles.$1}"],
+    "description": "Automatically add styles object for classNames for Next.js"
   }
 }
 ```

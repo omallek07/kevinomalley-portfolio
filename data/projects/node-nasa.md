@@ -7,7 +7,12 @@ imgUrl: "/static/NodeNasa1.png"
 
 [NodeJS Developer Udemy](https://www.udemy.com/course/complete-nodejs-developer-zero-to-mastery/learn/lecture/28160644#questions/16862870)
 
-I am wrapping up a 50 hour course on NodeJS, with all of the latest technology trends blended in..i.e. Docker, AWS, MongoDB, Github Actions, GraphQL, Typescript, etc.
+I have wrapped up a 50 hour course on NodeJS, with all of the latest technology trends blended in..i.e. Docker, AWS, MongoDB, Github Actions, GraphQL, Typescript, etc.
+
+In this course, my primary focus was to learn how to implement Docker and AWS to host a web app.
+
+Check out Node Nasa!
+[Public IP Page](http://3.17.10.115:8000)
 
 ![Node Nasa](/static/NodeNasa2.png)
 
