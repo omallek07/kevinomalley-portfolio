@@ -15,7 +15,7 @@
 
 .card {
   justify-content: center;
-  transition: all 400ms ease;
+  transition: all 350ms ease-out;
 }
 
 .cardImageWrapper {
@@ -44,7 +44,8 @@
 
   .card:hover {
     text-decoration: none;
-    transform: translateY(-10px);
+    transform: translateY(-15px);
     box-shadow: var(--box-shadow-hover);
+    opacity: 0.85;
   }
 }
