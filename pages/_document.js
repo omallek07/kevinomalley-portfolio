@@ -6,6 +6,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <title>{siteTitle}</title>
           <meta name="description" content="Kevin O'Malley Portfolio Website" />
           <meta
             property="og:image"

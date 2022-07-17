@@ -7,8 +7,6 @@ import BackToTop from "../sharedComponents/backToTop/";
 import { useEffect, useState } from "react";
 
 export default function Layout({ children }) {
-  const siteTitle = `Kevin O'Malley`;
-
   // The back-to-top button is hidden at the beginning
   const [showButton, setShowButton] = useState(false);
 
@@ -32,9 +30,6 @@ export default function Layout({ children }) {
 
   return (
     <>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
       <div className={styles.layout}>
         <Header />
         <main className={styles.main}>
