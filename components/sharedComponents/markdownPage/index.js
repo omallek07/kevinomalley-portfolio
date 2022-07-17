@@ -13,7 +13,6 @@ const MarkdownPage = ({ markdownData, isHomePageDisplay }) => {
       {!isHomePageDisplay && (
         <Head>
           <title>{title}</title>
-          <link rel="shortcut icon" href="/kevin-omalley-dev-favicon.png" />
         </Head>
       )}
       <div
