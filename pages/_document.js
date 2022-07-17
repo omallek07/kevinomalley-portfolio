@@ -6,7 +6,6 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="icon" href="/favicon.ico" />
           <meta name="description" content="Kevin O'Malley Portfolio Website" />
           <meta
             property="og:image"
@@ -34,6 +33,7 @@ class MyDocument extends Document {
             as="font"
             crossOrigin="anonymous"
           />
+          <link rel="shortcut icon" href="/kevin-omalley-dev-favicon.png" />
         </Head>
         <body>
           <Main />
