@@ -55,7 +55,6 @@ xl: min-width: 1280px; // extra large device
     color: var(--text-black);
     font-size: var(--medium-font-size);
     border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow-inset);
     z-index: 1;
   }
   .profileShotWrapper {

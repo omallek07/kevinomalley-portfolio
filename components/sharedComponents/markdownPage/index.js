@@ -15,7 +15,13 @@ const MarkdownPage = ({ markdownData, isHomePageDisplay }) => {
           <title>{title}</title>
         </Head>
       )}
-      <div className={cls("glass", styles.markdownPage)}>
+      <div
+        className={cls(
+          "glass",
+          styles.markdownPage,
+          isHomePageDisplay ? styles.homePageDisplay : ""
+        )}
+      >
         <div className={styles.header}>
           <div className={styles.imageWrapper}>
             <Image src={imgUrl} height={500} width={600} layout="responsive" />

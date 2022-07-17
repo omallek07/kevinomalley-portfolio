@@ -85,8 +85,11 @@ xl: min-width: 1280px; // extra large device
     padding: 2rem;
     background: var(--bg-light);
     border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow-inset);
     font-size: var(--medium-font-size);
+  }
+  .isHomePageDisplay {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
