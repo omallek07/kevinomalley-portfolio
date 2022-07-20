@@ -1,10 +1,11 @@
 import React from "react";
 import styles from "./socialContacts.module.css";
 import Image from "next/image";
+import clx from "classnames";
 
 // TODO - FIND logos for each contact
-const SocialContacts = ({ isInverted = false }) => {
-  const useInvertedColor = isInverted ? "orange" : "white";
+const SocialContacts = ({ isLabel = false, useOrangeIcons = false }) => {
+  const useInvertedColor = useOrangeIcons ? "orange" : "white";
   const socialContacts = [
     {
       title: "Github",
@@ -29,7 +30,10 @@ const SocialContacts = ({ isInverted = false }) => {
   const renderSocialContacts = socialContacts.map((socialContact) => {
     const { link, title, icon, alt } = socialContact;
     return (
-      <div key={title} className={styles.socialContact}>
+      <div
+        key={title}
+        className={clx(styles.socialContact, isLabel && styles.labelIcons)}
+      >
         <div className={styles.imageWrapper}>
           <Image
             alt={alt}

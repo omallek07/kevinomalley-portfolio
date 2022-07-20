@@ -1,6 +1,7 @@
 .cardHeaderWrapper {
   margin-top: 0.75rem /* 12px */;
   margin-bottom: 0.75rem /* 12px */;
+  color: var(--text-white-100);
 }
 
 .cardHeader {
@@ -28,6 +29,7 @@
 
 .cardDescription {
   min-height: 56px;
+  color: var(--text-white-100);
 }
 
 @media (min-width: 1024px) {

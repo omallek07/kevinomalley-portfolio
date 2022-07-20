@@ -24,7 +24,7 @@ const AboutMe = () => {
           <h1 className={styles.title}>Hello!</h1>
           {aboutMetext} {aboutMeBlogPost}
         </div>
-        <SocialContacts isInverted={true} />
+        <SocialContacts isLabel />
       </div>
     </div>
   );

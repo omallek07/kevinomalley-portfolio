@@ -4,8 +4,9 @@
 }
 
 .profileShotWrapper {
+  position: relative;
   margin: 0.5rem 0 1rem 0.5rem;
-  height: auto;
+  height: 350px;
   width: 250px;
   border-radius: 10px;
   overflow: hidden;
@@ -17,6 +18,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  color: var(--text-black);
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.6)
+  );
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
 }
 
 .textContainer {
@@ -46,20 +55,18 @@ xl: min-width: 1280px; // extra large device
     flex-direction: row;
   }
   .textContainer {
-    margin-bottom: 0;
+    margin-bottom: 2rem;
   }
   .rightContainer {
     width: 80%;
     padding: 2rem;
-    background: var(--bg-light);
-    color: var(--text-black);
     font-size: var(--medium-font-size);
     border-radius: var(--border-radius);
     z-index: 1;
   }
   .profileShotWrapper {
-    height: 345px;
-    width: 250px;
+    height: auto;
+    width: 20%;
     border-radius: none;
     overflow: visible;
     height: auto;

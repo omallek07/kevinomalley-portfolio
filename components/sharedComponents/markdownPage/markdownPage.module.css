@@ -10,10 +10,23 @@
   font-size: var(--medium-font-size);
 }
 
+.headerTitle {
+  color: var(--text-white-100);
+}
+
 .content {
   color: var(--text-black);
   font-size: var(--base-font-size);
   z-index: 1;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.6)
+  );
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  padding: 1rem;
+  border-radius: (--border-radius);
 }
 
 .content img {
@@ -83,8 +96,6 @@ xl: min-width: 1280px; // extra large device
 @media screen and (min-width: 768px) {
   .content {
     padding: 2rem;
-    background: var(--bg-light);
-    border-radius: var(--border-radius);
     font-size: var(--medium-font-size);
   }
   .isHomePageDisplay {

@@ -26,7 +26,7 @@ const MarkdownPage = ({ markdownData, isHomePageDisplay }) => {
           <div className={styles.imageWrapper}>
             <Image src={imgUrl} height={500} width={600} layout="responsive" />
           </div>
-          <div>
+          <div className={styles.headerTitle}>
             <h1>{title}</h1>
             <div>
               <Date dateString={date} />
