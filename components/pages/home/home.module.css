@@ -3,6 +3,10 @@
   flex-direction: column;
 }
 
+.aboutMeTitle {
+  color: var(--text-white-100);
+}
+
 .profileShotWrapper {
   position: relative;
   margin: 0.5rem 0 1rem 0.5rem;
@@ -50,7 +54,7 @@ xl: min-width: 1280px; // extra large device
 2xl: min-width: 1536px; // 2 x extra large device
 **/
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .aboutMe {
     flex-direction: row;
   }
