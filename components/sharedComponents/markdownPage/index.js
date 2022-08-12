@@ -26,7 +26,9 @@ const MarkdownPage = ({ markdownData, isHomePageDisplay }) => {
             <Image src={imgUrl} height={500} width={600} layout="responsive" />
           </div>
           <div className={styles.headerTitle}>
-            <h1 className="label">{title}</h1>
+            <div>
+              <h1 className="label">{title}</h1>
+            </div>
             <div className={cls(styles.cardDate, "label")}>
               <Date dateString={date} />
             </div>
