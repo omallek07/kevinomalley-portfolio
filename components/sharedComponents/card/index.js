@@ -12,10 +12,14 @@ const Card = (props) => {
       <a className={cls("glass", styles.card)}>
         <div className={styles.container}>
           <div className={styles.cardHeaderWrapper}>
-            <h2 className={styles.cardHeader}>{props.title}</h2>
-            <small>
-              <Date dateString={props.date} />
-            </small>
+            <h2 className={cls(styles.cardHeader, "label")}>{props.title}</h2>
+            <div>
+              <div className={styles.cardDate}>
+                <small className="label">
+                  <Date dateString={props.date} />
+                </small>
+              </div>
+            </div>
           </div>
           <div className={styles.cardImageWrapper}>
             <Image

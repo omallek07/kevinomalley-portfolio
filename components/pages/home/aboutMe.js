@@ -22,9 +22,11 @@ const AboutMe = () => {
       <div className={styles.rightContainer}>
         <div className={styles.textContainer}>
           <div className={styles.aboutMeTitleContainer}>
-            <h1 className={styles.aboutMeTitle}>Hello!</h1>
+            <h1>Welcome!</h1>
           </div>
-          {aboutMetext} {aboutMeBlogPost}
+          <p>
+            {aboutMetext} {aboutMeBlogPost}
+          </p>
         </div>
         <SocialContacts isLabel />
       </div>

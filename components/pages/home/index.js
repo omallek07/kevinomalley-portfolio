@@ -1,26 +1,25 @@
 import React from "react";
 import styles from "./home.module.css";
-import MarkdownPage from "../../sharedComponents/markdownPage";
 
 import Banner from "../../sharedComponents/banner";
 import Button from "../../sharedComponents/button";
 import AboutMe from "./aboutMe";
 
-const Home = (props) => {
-  const { latestPost, latestProject } = props;
+import Posts from "../posts/";
+import Projects from "../projects/";
+
+const Home = ({ allPostsData, allProjectsData }) => {
   return (
     <div className="homePage">
       <Banner title="Welcome to my site!" />
-      <section>
+      <section className={styles.section}>
         <AboutMe />
       </section>
-      <h1 className="subHeader">Latest Project</h1>
-      <section>
-        <MarkdownPage isHomePageDisplay markdownData={latestProject} />
+      <section className={styles.section}>
+        <Projects allProjectsData={allProjectsData} />
       </section>
-      <h1 className="subHeader">Latest Post</h1>
-      <section>
-        <MarkdownPage isHomePageDisplay markdownData={latestPost} />
+      <section className={styles.section}>
+        <Posts allPostsData={allPostsData} />
       </section>
       <Button buttonText="Check out my resume" link="/portfolio" />
     </div>

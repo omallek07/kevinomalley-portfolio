@@ -32,7 +32,10 @@ const SocialContacts = ({ isLabel = false, useOrangeIcons = false }) => {
     return (
       <div
         key={title}
-        className={clx(styles.socialContact, isLabel && styles.labelIcons)}
+        className={clx(
+          styles.socialContact,
+          isLabel ? clx(styles.labelIcons, "label light") : ""
+        )}
       >
         <div className={styles.imageWrapper}>
           <Image

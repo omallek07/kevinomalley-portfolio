@@ -14,6 +14,10 @@
   width: 16rem /* 256px */;
 }
 
+.cardDate {
+  margin: 0.5rem 0;
+}
+
 .card {
   justify-content: center;
   transition: all 350ms ease-out;
@@ -28,8 +32,10 @@
 }
 
 .cardDescription {
+  font-size: var(--base-font-size);
+  margin-top: 0.5rem;
   min-height: 56px;
-  color: var(--text-white-100);
+  color: var(--text-black);
 }
 
 @media (min-width: 1024px) {
@@ -48,6 +54,5 @@
     text-decoration: none;
     transform: translateY(-15px);
     box-shadow: var(--box-shadow-hover);
-    opacity: 0.85;
   }
 }

@@ -16,14 +16,12 @@
 }
 
 .socialContact.labelIcons {
-  color: var(--text-white-100);
-  background: rgba(0, 0, 0, 0.2);
-  padding: 5px 8px;
-  border-radius: var(--border-radius);
+  transition: all 100 ease-in;
 }
 
 .socialContact.labelIcons:hover {
-  background: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .socialContact.labelIcons a:hover {
