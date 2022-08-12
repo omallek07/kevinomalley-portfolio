@@ -4,7 +4,6 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "./markdownPage.module.css";
 import cls from "classnames";
-import { is } from "date-fns/locale";
 
 const MarkdownPage = ({ markdownData, isHomePageDisplay }) => {
   const { title, date, contentHtml, imgUrl } = markdownData;
@@ -27,8 +26,8 @@ const MarkdownPage = ({ markdownData, isHomePageDisplay }) => {
             <Image src={imgUrl} height={500} width={600} layout="responsive" />
           </div>
           <div className={styles.headerTitle}>
-            <h1>{title}</h1>
-            <div>
+            <h1 className="label">{title}</h1>
+            <div className={cls(styles.cardDate, "label")}>
               <Date dateString={date} />
             </div>
           </div>
