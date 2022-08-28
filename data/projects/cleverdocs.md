@@ -1,5 +1,5 @@
 ---
-title: "Gatsby.js Documentation Tool"
+title: "Documentation Tool"
 date: "2019-11-11"
 shortDescription: "GUI that creates and stores documentation. Built by Gatsby.js and connects to the Gitlab API"
 imgUrl: "/static/cleverdocs1.jpg"
