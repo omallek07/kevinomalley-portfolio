@@ -10,9 +10,22 @@
 
 .socialContact {
   margin-right: 1rem;
+}
+
+.socialContactLink {
+  padding: 0 0.25rem;
   display: flex;
   align-items: baseline;
+  justify-content: center;
+  align-items: center;
   color: var(--text-white-100);
+}
+
+.socialContactTitle {
+  margin-left: 5px;
+  font-size: 1.25rem /* 20px */;
+  line-height: 1.75rem /* 28px */;
+  font-weight: 800;
 }
 
 .socialContact.labelIcons {
@@ -21,7 +34,6 @@
 
 .socialContact.labelIcons:hover {
   cursor: pointer;
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .socialContact.labelIcons a:hover {
@@ -34,9 +46,6 @@
 
 /** lg breakpoint **/
 @media (min-width: 1024px) {
-  .socialContact {
-    margin-right: 1.5rem;
-  }
   .imageWrapper {
     width: 22px;
     height: 22px;

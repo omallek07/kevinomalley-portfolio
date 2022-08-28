@@ -15,11 +15,11 @@ const AboutMe = () => {
   );
 
   return (
-    <div className={cls("glass", styles.aboutMe)}>
+    <div className={styles.aboutMe}>
       <div className={styles.profileShotWrapper}>
         <ProfileShot />
       </div>
-      <div className={styles.rightContainer}>
+      <div className={cls("glass", styles.rightContainer)}>
         <div className={styles.textContainer}>
           <div className={styles.aboutMeTitleContainer}>
             <h1>Welcome!</h1>

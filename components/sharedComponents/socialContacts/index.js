@@ -4,7 +4,11 @@ import Image from "next/image";
 import clx from "classnames";
 
 // TODO - FIND logos for each contact
-const SocialContacts = ({ isLabel = false, useOrangeIcons = false }) => {
+const SocialContacts = ({
+  isLabel = false,
+  useOrangeIcons = false,
+  hideLabels,
+}) => {
   const useInvertedColor = useOrangeIcons ? "orange" : "white";
   const socialContacts = [
     {
@@ -34,20 +38,22 @@ const SocialContacts = ({ isLabel = false, useOrangeIcons = false }) => {
         key={title}
         className={clx(
           styles.socialContact,
-          isLabel ? clx(styles.labelIcons, "label light") : ""
+          isLabel ? clx(styles.labelIcons, "label") : ""
         )}
       >
-        <div className={styles.imageWrapper}>
-          <Image
-            alt={alt}
-            src={icon}
-            height={25}
-            width={25}
-            layout="responsive"
-          />
-        </div>
-        <a className="social-contact-link" href={link} alt={title}>
-          {title}
+        <a className={styles.socialContactLink} href={link} alt={title}>
+          <div className={styles.imageWrapper}>
+            <Image
+              alt={alt}
+              src={icon}
+              height={25}
+              width={25}
+              layout="responsive"
+            />
+          </div>
+          <h2 className={styles.socialContactTitle}>
+            {hideLabels ? "" : title}
+          </h2>
         </a>
       </div>
     );
