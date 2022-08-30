@@ -14,7 +14,7 @@
 
 .profileShotWrapper {
   position: relative;
-  margin: 0.5rem 0 1rem 0.5rem;
+  margin: 0.5rem auto 2rem auto;
   height: 350px;
   width: 250px;
   border-radius: 10px;
@@ -55,6 +55,11 @@ lg: min-width: 1024px; // large device
 xl: min-width: 1280px; // extra large device
 2xl: min-width: 1536px; // 2 x extra large device
 **/
+@media screen and (min-width: 768px) {
+  .profileShotWrapper {
+    margin: 0.5rem 0 1rem 0.5rem;
+  }
+}
 
 @media screen and (min-width: 1280px) {
   .aboutMe {
@@ -80,6 +85,6 @@ xl: min-width: 1280px; // extra large device
     padding: 0;
     margin: 0;
     margin-right: 0.5rem;
-    box-shadow: none;
+    box-shadow: var(--box-shadow);
   }
 }

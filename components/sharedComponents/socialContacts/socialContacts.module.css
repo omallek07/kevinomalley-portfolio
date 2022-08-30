@@ -1,5 +1,6 @@
 .socialContacts {
   display: flex;
+  flex-direction: column;
 }
 
 .imageWrapper {
@@ -13,6 +14,8 @@
 }
 
 .socialContactLink {
+  margin-bottom: 1rem;
+  width: 100%;
   padding: 0 0.25rem;
   display: flex;
   align-items: baseline;
@@ -42,6 +45,16 @@
 
 .socialContact:last-child {
   margin-right: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .socialContacts {
+    flex-direction: row;
+  }
+  .socialContactLink {
+    width: auto;
+    margin-bottom: 0;
+  }
 }
 
 /** lg breakpoint **/
