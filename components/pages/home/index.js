@@ -11,7 +11,7 @@ import Projects from "../projects/";
 const Home = ({ allPostsData, allProjectsData }) => {
   return (
     <div className="homePage">
-      <Banner title="Welcome to my site!" />
+      <Banner title="Welcome to my page!" />
       <section className={styles.section}>
         <AboutMe />
       </section>
