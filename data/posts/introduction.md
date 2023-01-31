@@ -1,8 +1,8 @@
 ---
-title: "Welcome!"
-date: "2022-01-11"
-shortDescription: "Introducing myself!"
-imgUrl: "https://images.unsplash.com/photo-1477414956199-7dafc86a4f1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"
+title: 'Welcome!'
+date: '2022-01-11'
+shortDescription: 'Introducing myself!'
+imgUrl: 'https://images.unsplash.com/photo-1477414956199-7dafc86a4f1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80'
 ---
 
 Welcome to my blog posts. I am excited to get this project up and running via experimenting with Next.js.
@@ -11,6 +11,8 @@ A little about me. My name is Kevin O'Malley. I lived in Chicago for the past ei
 
 ![Ollie](/static/Ollie.JPG)
 ![Chloe](/static/Chloe.JPG)
+
+I am also excited to share that I am now a first time father. My son is two months old as this moment and has been an absolute joy (minus the severe lack of sleep). I won't share a picture of him but I can vouch that he is very cute.
 
 I am a full stack software engineer experienced in JavaScript. Prior to being a developer, I had a bit of a wild ride in careers. I started out with working in the field of Autism as a behavior therapist. I did this for several years, both in Colorado and Chicago. I then moved out of behavior therapy and did contract work and part time opportunites while I figured out my next career path. One of my favorite part time jobs at this time was working at the Christkindl Market in downtown Chicago for a winter. I worked at a glass blowing booth and sold ornaments with German colleagues.
 

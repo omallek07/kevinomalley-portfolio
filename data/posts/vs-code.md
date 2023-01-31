@@ -1,8 +1,8 @@
 ---
-title: "VSCode User Snippets"
-date: "2022-03-26"
-shortDescription: "Sharing user code snippets I use regularly in VSCode."
-imgUrl: "/static/VSCode.png"
+title: 'VSCode User Snippets'
+date: '2022-03-26'
+shortDescription: 'Sharing user code snippets I use regularly in VSCode.'
+imgUrl: '/static/VSCode.png'
 ---
 
 #### A small and simple post but hopefully helpful to any developers :)
@@ -17,10 +17,21 @@ Open up 'Preferences: Configure User Snippets' and create a new snippets file. (
 ## User Snippets
 
 ```
-{
- "Print to console": {
+  "Console.log Basic": {
+    "scope": "javascript,typescript",
+    "prefix": "lg",
+    "body": ["console.log('$1');"],
+    "description": "Basic console log"
+  },
+  "Console.log with string and variable": {
     "scope": "javascript,typescript",
     "prefix": "log",
+    "body": ["console.log('$1', $2);", "$3"],
+    "description": "Console.log item with a unique string and unique variable."
+  },
+  "Console.log with matching string and variable": {
+    "scope": "javascript,typescript",
+    "prefix": "rlog",
     "body": ["console.log('$1', $1);", "$2"],
     "description": "Console.log item with string of exact name in front."
   },
@@ -34,7 +45,7 @@ Open up 'Preferences: Configure User Snippets' and create a new snippets file. (
     "scope": "javascript,typescript",
     "prefix": "ifmd",
     "body": ["import $1 from './$2';"],
-    "description": "ES6 Default Import"
+    "description": "ES6 Deafulat Import"
   },
   "CommonJS Module Require": {
     "scope": "javascript,typescript",
@@ -57,37 +68,49 @@ Open up 'Preferences: Configure User Snippets' and create a new snippets file. (
   "New Object Literal": {
     "scope": "javascript,typescript",
     "prefix": "ol",
-    "body": ["const $1 = { $2 : $3, };"],
+    "body": ["const $1 = {\n\t$2 : $3, \n};"],
+    "description": "Object Literal"
+  },
+  "Callback Function": {
+    "scope": "javascript,typescript",
+    "prefix": "cb",
+    "body": ["$1($2, ($3) => {\n\t$4 \n});"],
     "description": "Object Literal"
   },
   "JS Declaration Function": {
     "scope": "javascript,typescript",
     "prefix": "fc",
-    "body": ["function $1($2) { $3 }"],
+    "body": ["function $1($2) {\n\t$3 \n}"],
     "description": "Function declaration"
+  },
+  "Export Default JS Declaration Function": {
+    "scope": "javascript,typescript",
+    "prefix": "edf",
+    "body": ["export default function $1($2) {\n\t$3 \n}"],
+    "description": "Export Defauly Function declaration"
   },
   "Async JS Declaration Function": {
     "scope": "javascript,typescript",
     "prefix": "afc",
-    "body": ["async function $1($2) { const $3 = await $4; }"],
+    "body": ["async function $1($2) {\n\t$3 \n}"],
     "description": "Async function declaration"
   },
   "JS Arrow Function": {
     "scope": "javascript,typescript",
     "prefix": "fca",
-    "body": ["const $1 = ($2) => { $3 };"],
+    "body": ["const $1 = ($2) => {\n\t$3 \n};"],
     "description": "Arrow function"
   },
   "Async JS Arrow Function": {
     "scope": "javascript,typescript",
     "prefix": "afca",
-    "body": ["const $1 = async ($2) => { const $3 = await $4; };"],
+    "body": ["const $1 = async ($2) => {\n\t$3 \n};"],
     "description": "Async arrow function"
   },
   "Styles Container": {
     "scope": "javascript,typescript",
     "prefix": "cs",
-    "body": ["className={styles.$1}"],
+    "body": ["className={styles.$1}$2"],
     "description": "Automatically add styles object for classNames for Next.js"
   }
 }

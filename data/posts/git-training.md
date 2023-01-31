@@ -1,106 +1,13 @@
 ---
-title: "Git"
-date: "2022-03-08"
-shortDescription: "Notes on Git"
-imgUrl: "https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2352&q=80"
+title: 'Git'
+date: '2022-03-08'
+shortDescription: 'Notes on Git'
+imgUrl: 'https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2352&q=80'
 ---
 
 Tuesday, March 8, 2022
 
-**Git Training**
-
-**Version Control System**
-
-- Software that helps track and manage changes to files over time
-- Git is the most popular version control system.
-- Git helps us...
-
-- Track changes across multiple files
-- Compare versions of a project
-- "Time travel" to a previous version
-- Revert to a previous version
-- Collaborate and share changes
-- Combine changes
-
-**History of Git**
-
-- Linus Torvalds
-
-- Legendary software engineer who created and developed Linux and Git
-- Created git out of frustration of current control systems
-
-**Git vs. Github**
-
-- Not the same thing
-- Git is a software that runs locally on your machine. You don't need the internet to use it and you can use git without ever touching GitHub.
-- Github is a service that hosts Git repositories in the cloud and makes it easier to collaborate with other people.
-
-**How to interact with Git**
-
-- Terminal vs Graphical
-
-- Primarily a terminal tool (git in a Unix shell)
-- However there a lot of GUI's
-
-- Github Desktop
-- SourceTree
-- Tower
-- GitKraken
-- Ungit
-
-**Windows Install**
-
-- Download Git for Windows
-- Git Bash
-
-- Bash is a command line interface widely used by developers. It's the default shell for Linux and Mac.
-- Windows comes with a different default command line interface called Command Prompt.
-- Git Bash is a tool that emulates a Bash experience on a Windows machine. It comes with Git too.
-
-**Configurations**
-
-- git config ---global user.name "NAME"
-- git config ---global user.email <EMAIL@EMAIL.COM>
-
-**Terminal Crash Course**
-
-- ls
-
-- List contents of your current directory
-
-- open .
-
-- Open directory or files
-
-- pwd
-
-- Print working directory (location)
-
-- cd ..
-
-- Go back one folder
-
-- touch FILENAME
-
-- Create file
-
-- mkdir DIRECTORY
-
-- Make directory
-
-- rm FILENAME
-
-- Delete file
-
-- rm -rf
-
-- Delete a directory (r = recursive, f = force)
-
-**Git Repo**
-
-- Repository
-
-- A Git "Repo" is a workspace which tracks and manages files within a folder
+Just sharing an open notes format on Git!
 
 **Git Commands**
 
