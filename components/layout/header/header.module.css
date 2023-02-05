@@ -1,6 +1,4 @@
 .header {
-  display: flex;
-  flex-direction: column;
   padding: 0.5rem;
   padding-bottom: 0;
   z-index: 1;
@@ -8,7 +6,6 @@
 
 .navHeader {
   opacity: 1;
-  color: var(--text-white-100);
   font-size: 1.2rem;
   display: inline;
   cursor: pointer;
@@ -16,6 +13,7 @@
 
 .navContainer {
   display: flex;
+  justify-content: space-between;
 }
 
 .navItem {
@@ -23,6 +21,7 @@
   justify-content: center;
   align-items: center;
   margin-right: 0.5rem;
+  text-shadow: -4px 4px 1px rgba(0, 0, 0, 0.2);
 }
 .navItem:last-of-type {
   margin-right: 0;
@@ -45,25 +44,37 @@ xl: min-width: 1280px; // extra large device
 2xl: min-width: 1536px; // 2 x extra large device
 **/
 
-@media (min-width: 640px) {
+@media (min-width: 768px) {
   .header {
-    padding: 1rem 1.5rem;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    padding-top: 2rem;
+  }
+  .navContainer {
+    justify-content: center;
+  }
+
+  .navItem {
+    margin-right: 2rem;
+  }
+  .navItem a {
+    font-size: var(--large-font-size);
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
   .header {
-    padding: 2rem 0;
+    padding: 1rem 0;
   }
-  .navItem,
-  .navHeader {
-    font-size: var(--large-font-size);
+  .navItem a {
+    font-size: 3rem;
   }
+
+  .navItem a:hover,
+  .navItem a:active {
+    color: var(--text-orange);
+  }
+
   .navItem {
-    margin-right: 1.75rem;
+    margin-right: 3rem;
   }
   .navItem:last-of-type {
     margin-right: 0;

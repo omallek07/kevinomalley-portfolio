@@ -1,29 +1,28 @@
-import React from "react";
-import Link from "next/link";
-import styles from "./header.module.css";
-import Image from "next/image";
+import React from 'react';
+import Link from 'next/link';
+import styles from './header.module.css';
 
 const Header = () => {
   const navLinks = [
     {
-      link: "/",
-      label: "Home",
-      icon: "/icons/home-icon-white.svg",
+      link: '/',
+      label: 'Home',
+      icon: '/icons/home-icon-white.svg',
     },
     {
-      link: "/posts",
-      label: "Blog",
-      icon: "/icons/blog-icon-white.svg",
+      link: '/posts',
+      label: 'Blog',
+      icon: '/icons/blog-icon-white.svg',
     },
     {
-      link: "/projects",
-      label: "Projects",
-      icon: "/icons/projects-icon-white.svg",
+      link: '/projects',
+      label: 'Projects',
+      icon: '/icons/projects-icon-white.svg',
     },
     {
-      link: "/portfolio",
-      label: "Portfolio",
-      icon: "/icons/resume-icon-white.svg",
+      link: '/portfolio',
+      label: 'Portfolio',
+      icon: '/icons/resume-icon-white.svg',
     },
   ];
 
@@ -40,11 +39,6 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <div>
-        <Link alt="Home" href="/">
-          <h1 className={styles.navHeader}>Kevin O'Malley</h1>
-        </Link>
-      </div>
       <nav className={styles.navContainer}>{renderedNavLinks}</nav>
     </header>
   );

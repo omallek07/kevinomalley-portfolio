@@ -5,10 +5,8 @@
 }
 
 .cardHeader {
-  text-overflow: ellipsis;
-  white-space: nowrap;
   font-size: 1.25rem /* 20px */;
-  line-height: 1.75rem /* 28px */;
+  line-height: 1.75;
   font-weight: 800;
   overflow: hidden;
   width: 16rem /* 256px */;
@@ -54,5 +52,22 @@
     text-decoration: none;
     transform: translateY(-15px);
     box-shadow: var(--box-shadow-hover);
+  }
+}
+
+@media (min-width: 1028px) {
+  .card {
+    text-align: center;
+    padding-top: 1.8rem;
+  }
+  .card:hover {
+    box-shadow: none;
+  }
+  .cardHeader {
+    font-size: 2rem;
+  }
+  .card p {
+    color: var(--text-white);
+    text-shadow: -2px 2px 1px rgb(0 0 0 / 25%);
   }
 }

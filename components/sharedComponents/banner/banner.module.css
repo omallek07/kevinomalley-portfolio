@@ -4,48 +4,40 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 1rem 1.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1rem 1rem 1rem 0.5rem;
+}
+
+.isTopBanner {
   margin-bottom: 1.5rem;
 }
 
-.banner:before {
-  content: " ";
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.3;
-  background: url("/static/code-hero.jpeg");
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-size: cover;
-}
-
 .title {
-  letter-spacing: -0.025em;
+  letter-spacing: 1px;
   font-weight: 800;
-  color: var(--text-black);
-  font-size: 2rem;
   line-height: 1;
   z-index: 2;
 }
 
 .title span {
-  display: block;
+  color: var(--bg-dark);
+  font-size: 2rem;
 }
+
+.title span:not(:last-child) {
+  margin-right: 0.25rem;
+}
+
 .title span:nth-child(odd) {
   color: var(--text-orange);
+  text-shadow: -4px 4px 1px rgba(0, 0, 0, 0.2);
 }
 .title span:nth-child(even) {
-  color: var(--text-white-100);
+  color: var(--text-white);
+  text-shadow: -4px 4px 1px rgba(0, 0, 0, 0.2);
 }
 
 /** sm breakpoint **/
-@media (min-width: 640px) {
+@media screen and (min-width: 640px) {
   .title {
     font-size: 2rem;
     line-height: 1;
@@ -53,18 +45,56 @@
 }
 
 /** md breakpoint **/
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .title span:nth-child(odd) {
+    color: var(--bg-light);
+    text-shadow: -4px 4px 1px var(--bg-dark);
+  }
+  .title span:nth-child(even) {
+    color: var(--bg-light);
+    text-shadow: -4px 4px 1px var(--bg-dark);
+  }
   .banner {
-    margin-bottom: 2rem;
+    justify-content: center;
+    margin: 1.75rem 0;
+    border-top: 1px solid var(--bg-light);
+    border-bottom: 1px solid var(--bg-light);
+  }
+  .banner:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: url('/static/code-hero.jpeg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
   }
   .title {
-    font-size: 3.75rem /* 60px */;
     line-height: 1;
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .banner {
+    margin: 4rem 0;
+  }
+
+  .isTopBanner {
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
 /** lg breakpoint **/
-@media (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+  .isTopBanner {
+    margin: 4rem;
+  }
   .banner {
     border: none;
     padding: 0;
@@ -72,16 +102,17 @@
   .banner:before {
     opacity: 0;
   }
-  .container {
-    text-align: left;
+  .title span {
+    font-size: 2.5rem;
+  }
+  .title span:not(:last-child) {
+    margin-right: 0.5rem;
   }
 
-  .title {
-    font-size: 4rem;
-    line-height: 1;
+  .title span:nth-child(odd) {
+    color: var(--text-orange);
   }
-  .title span {
-    display: inline;
-    text-transform: capitalize;
+  title .container {
+    text-align: left;
   }
 }
