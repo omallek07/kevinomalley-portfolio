@@ -7,14 +7,14 @@
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
-  font-size: var(--medium-font-size);
 }
 
 .cardDate {
   margin: 0.5rem 0;
 }
 
-.headerTitle {
+.headerTitle h1.label {
+  font-size: var(--medium-font-size);
   color: var(--text-black);
 }
 
@@ -40,7 +40,6 @@
   border-radius: var(--border-radius);
   border-radius: var(--border-radius);
   overflow: hidden;
-  box-shadow: var(--box-shadow);
   margin-top: 1rem;
   margin-bottom: 1rem;
   margin-right: 1rem;
@@ -110,7 +109,7 @@ xl: min-width: 1280px; // extra large device
 }
 
 @media screen and (min-width: 1024px) {
-  .header {
+  .headerTitle h1.label {
     font-size: var(--large-font-size);
   }
 }
