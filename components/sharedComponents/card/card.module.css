@@ -17,7 +17,12 @@
 }
 
 .card {
-  justify-content: center;
+  height: 100%;
+  margin: auto 0.4rem;
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
   transition: all 350ms ease-out;
 }
 
@@ -37,6 +42,9 @@
 }
 
 @media (min-width: 1024px) {
+  .card {
+    align-items: center;
+  }
   .cardHeader {
     width: 16rem /* 256px */;
     font-size: var(--medium-font-size);
@@ -44,6 +52,10 @@
 }
 
 @media (min-width: 768px) {
+  .card {
+    border-radius: 6px;
+    margin: 0;
+  }
   .cardHeader {
     width: 16rem /* 256px */;
   }
@@ -57,7 +69,6 @@
 
 @media (min-width: 1028px) {
   .card {
-    text-align: center;
     padding-top: 1.8rem;
   }
   .card:hover {

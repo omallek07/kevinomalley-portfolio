@@ -5,7 +5,8 @@
   margin-right: auto;
   max-width: 72rem /* 1152px */;
   height: 100%;
-  overflow: auto;
+  width: 100vw;
+  overflow: hidden;
 }
 
 .main {

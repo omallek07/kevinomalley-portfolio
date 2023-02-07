@@ -1,6 +1,7 @@
 .markdownPage {
   display: flex;
   flex-direction: column;
+  margin-top: 1rem;
 }
 
 .header {
@@ -9,13 +10,8 @@
   align-items: center;
 }
 
-.cardDate {
-  margin: 0.5rem 0;
-}
-
-.headerTitle h1.label {
-  font-size: var(--medium-font-size);
-  color: var(--text-black);
+.title {
+  margin-bottom: 1rem;
 }
 
 .content {
@@ -105,11 +101,5 @@ xl: min-width: 1280px; // extra large device
   .isHomePageDisplay {
     width: 80%;
     margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .headerTitle h1.label {
-    font-size: var(--large-font-size);
   }
 }

@@ -1,9 +1,9 @@
-import React from "react";
-import Date from "../../sharedComponents/dateDisplay/index.js";
-import Head from "next/head";
-import Image from "next/image";
-import styles from "./markdownPage.module.css";
-import cls from "classnames";
+import React from 'react';
+import Date from '../../sharedComponents/dateDisplay/index.js';
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from './markdownPage.module.css';
+import cls from 'classnames';
 
 const MarkdownPage = ({ markdownData, isHomePageDisplay }) => {
   const { title, date, contentHtml, imgUrl } = markdownData;
@@ -16,20 +16,27 @@ const MarkdownPage = ({ markdownData, isHomePageDisplay }) => {
       )}
       <div
         className={cls(
-          "glass",
+          'glass',
           styles.markdownPage,
-          isHomePageDisplay ? styles.homePageDisplay : ""
+          isHomePageDisplay ? styles.homePageDisplay : ''
         )}
       >
         <div className={styles.header}>
           <div className={styles.imageWrapper}>
-            <Image src={imgUrl} height={500} width={600} layout="responsive" />
+            <Image
+              src={imgUrl}
+              height={500}
+              width={600}
+              layout='responsive'
+              placeholder='blur'
+              blurDataURL='data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=='
+            />
           </div>
           <div className={styles.headerTitle}>
-            <div>
-              <h1 className="label">{title}</h1>
+            <div className={styles.title}>
+              <h1 className='label'>{title}</h1>
             </div>
-            <div className={cls(styles.cardDate, "label")}>
+            <div className={cls(styles.cardDate, 'label')}>
               <Date dateString={date} />
             </div>
           </div>
