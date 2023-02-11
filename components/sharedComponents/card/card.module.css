@@ -54,7 +54,6 @@
 @media (min-width: 768px) {
   .card {
     border-radius: 6px;
-    margin: 0;
   }
   .cardHeader {
     width: 16rem /* 256px */;
@@ -69,6 +68,7 @@
 
 @media (min-width: 1028px) {
   .card {
+    margin: 0;
     padding-top: 1.8rem;
   }
   .card:hover {

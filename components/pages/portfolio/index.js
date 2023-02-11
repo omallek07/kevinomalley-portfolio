@@ -1,10 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from './portfolio.module.css';
+import Banner from '../../sharedComponents/banner';
 
 const Portfolio = () => {
   return (
     <>
+      <Banner title='My Portfolio' />
       <section className={styles.portfolioWrapper}>
         <Image
           src='/static/KevinOMalleyResume2022.png'
