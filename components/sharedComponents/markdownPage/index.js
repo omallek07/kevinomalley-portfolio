@@ -16,7 +16,6 @@ const MarkdownPage = ({ markdownData, isHomePageDisplay }) => {
       )}
       <div
         className={cls(
-          'glass',
           styles.markdownPage,
           isHomePageDisplay ? styles.homePageDisplay : ''
         )}
@@ -28,8 +27,7 @@ const MarkdownPage = ({ markdownData, isHomePageDisplay }) => {
               height={500}
               width={600}
               layout='responsive'
-              placeholder='blur'
-              blurDataURL='data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=='
+              placeholder='empty'
             />
           </div>
           <div className={styles.headerTitle}>

@@ -77,7 +77,7 @@
 
 @media screen and (min-width: 1024px) {
   .banner {
-    margin: 4rem 0;
+    margin: 2rem 0;
   }
 
   .isTopBanner {
@@ -95,6 +95,7 @@
   .banner {
     border: none;
     padding: 0;
+    margin: 3rem 0;
   }
   .banner:before {
     opacity: 0;

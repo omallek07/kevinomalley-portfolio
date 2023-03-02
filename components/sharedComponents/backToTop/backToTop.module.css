@@ -38,5 +38,6 @@ xl: min-width: 1280px; // extra large device
     background: none;
     box-shadow: none;
     bottom: 70px;
+    right: 20px;
   }
 }

@@ -1,8 +1,8 @@
 ---
-title: "VSCode Key Shortcuts"
-date: "2022-03-27"
-shortDescription: "Part two: I am sharing useful key shortcuts I use in VSCode."
-imgUrl: "/static/VSCode.png"
+title: 'VSCode Key Shortcuts'
+date: '2022-03-27'
+shortDescription: 'Part two: I am sharing useful key shortcuts I use in VSCode.'
+imgUrl: '/static/VSCode.png'
 ---
 
 ## Useful VSCode Key Shortcuts
@@ -28,7 +28,6 @@ imgUrl: "/static/VSCode.png"
 `Cmd + P`
 
 - Search Files By Name.
-
 - Hold Cmd and keep tapping P to navigate through files. Double tap P to go back to previously opened file.
 
 `Ctrl + Tab`

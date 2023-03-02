@@ -53,7 +53,7 @@
 
 @media (min-width: 768px) {
   .card {
-    border-radius: 6px;
+    border-radius: var(--border-radius);
   }
   .cardHeader {
     width: 16rem /* 256px */;
